@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study — KitchenAid Espresso Machine Redesign</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="coffeemaker-ui.css" />
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <a class="nav-back" href="index.html">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10 3L5 8l5 5"/>
+      </svg>
+      Portfolio
+    </a>
+    <span class="nav-tag">Case Study</span>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero fade-in">
+    <div class="hero-label">UX Analysis + Interface Redesign</div>
+    <h1>Redesigning a KitchenAid Espresso Machine Interface</h1>
+    <p class="hero-sub">
+      When a machine looks good but works badly — applying Norman's design principles
+      to uncover usability failures and propose a clearer, safer interaction model.
+    </p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-label">Role</span>
+        <span class="meta-value">UX Researcher + Interface Designer</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Context</span>
+        <span class="meta-value">ASU · TWC 150 Course Project</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Year</span>
+        <span class="meta-value">2026</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Tools</span>
+        <span class="meta-value">HTML/CSS/JS · Vercel · UX Analysis</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Skills</span>
+        <div class="tags" style="margin-top:0.2rem">
+          <span class="tag">Usability Analysis</span>
+          <span class="tag">Norman's Principles</span>
+          <span class="tag">UI Redesign</span>
+          <span class="tag">Prototyping</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="container">
+
+    <hr class="divider" />
+
+    <!-- Overview -->
+    <section class="fade-in">
+      <div class="section-eyebrow">01 — Overview</div>
+      <h2>The Tension Between Form and Function</h2>
+      <p>
+        The KitchenAid semi-automatic espresso machine I own is visually elegant —
+        smooth metallic surfaces, a minimal control panel, no clutter. Yet every week it
+        generates friction: buttons that don't look like buttons, feedback signals with
+        inconsistent meanings, and hidden interactions that require consulting a manual.
+      </p>
+      <p>
+        This project applies <strong>Donald Norman's design principles</strong> — signifiers,
+        affordances, feedback, mapping, conceptual models, and constraints — as a structured
+        lens to identify exactly where the interface fails its users. It then proposes a
+        redesigned interface that preserves the minimal aesthetic while resolving the
+        core usability problems.
+      </p>
+    </section>
+
+    <!-- Problem -->
+    <section class="fade-in">
+      <div class="section-eyebrow">02 — Problem</div>
+      <h2>Four Layers of Usability Failure</h2>
+      <p>
+        Through daily use and systematic analysis, I identified four interconnected issues
+        that together create a consistent pattern of confusion:
+      </p>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-icon">🎭</span>
+          <h3>Unclear Signifiers</h3>
+          <p>The metallic horizontal bars that serve as buttons look like decorative trim. No visual cue communicates "press here." Icons above the bars — cup, steam, water droplet, "1" and "2" — have no text labels.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">🔆</span>
+          <h3>Inconsistent Feedback</h3>
+          <p>A blinking LED means "preheating" in one context but "phase complete, press to continue" in cleaning mode. The same signal carries different meanings with no differentiation.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">🗺️</span>
+          <h3>Broken Mental Model</h3>
+          <p>The button layout doesn't reflect the natural coffee-making sequence: grind → fill portafilter → power on → preheat → select strength → extract → steam. The interface creates cognitive mismatch.</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">🚫</span>
+          <h3>Hidden Interactions</h3>
+          <p>Temperature adjustment requires a long-press with zero indication on the interface itself. There are no error states for low water, no warning before the machine becomes unusable.</p>
+        </div>
+      </div>
+
+      <div class="quote-block" style="margin-top: 2rem;">
+        <p>"They needed a way to designate which parts could be touched, slid upward, downward, or sideways, or tapped upon."</p>
+        <div class="quote-source">— Donald Norman, The Design of Everyday Things (2013), p. 34</div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="fade-in">
+      <div class="section-eyebrow">03 — Process</div>
+      <h2>Applying Norman's Framework Systematically</h2>
+      <p>
+        Rather than listing problems intuitively, I structured the analysis around six
+        specific design principles to ensure each finding was grounded in established
+        UX theory:
+      </p>
+
+      <div class="principle-list">
+        <div class="principle-row">
+          <div class="principle-name">Signifiers</div>
+          <div class="principle-desc">Flat, seamless bars provide no visual affordance for pressing. The perceived action possibility is zero without prior manual reading.</div>
+        </div>
+        <div class="principle-row">
+          <div class="principle-name">Affordances</div>
+          <div class="principle-desc">Unlike raised or tactile buttons that invite physical interaction, the bars appear purely decorative — weakening the connection between object and action.</div>
+        </div>
+        <div class="principle-row">
+          <div class="principle-name">Feedback</div>
+          <div class="principle-desc">LED blinking is reused across contexts with different meanings. No audible signal when preheating completes. No multi-sensory confirmation layer.</div>
+        </div>
+        <div class="principle-row">
+          <div class="principle-name">Mapping</div>
+          <div class="principle-desc">Button placement does not correspond to the logical steps of brewing. Users can't intuit which button does what based on position or sequence.</div>
+        </div>
+        <div class="principle-row">
+          <div class="principle-name">Conceptual Model</div>
+          <div class="principle-desc">The interface fails to represent the user's mental workflow. The gap between how the machine "thinks" and how users "think" creates systematic errors.</div>
+        </div>
+        <div class="principle-row">
+          <div class="principle-name">Constraints</div>
+          <div class="principle-desc">No error prevention for low water or improperly installed portafilter. The machine allows dangerous or failed states without warning.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Redesign -->
+    <section class="fade-in">
+      <div class="section-eyebrow">04 — Redesign</div>
+      <h2>Solving Problems Without Losing Minimal Aesthetics</h2>
+      <p>
+        The redesign goal was specific: <strong>fix the interaction model, not the visual identity</strong>.
+        The machine's clean aesthetic is a feature — the task is to make clarity and
+        beauty coexist.
+      </p>
+
+      <div class="before-after">
+        <div class="ba-card">
+          <div class="ba-label before">⚠ Before</div>
+          <div class="ba-body">
+            <ul>
+              <li>Icons only, no text labels</li>
+              <li>Temperature hidden in long-press</li>
+              <li>Blinking LED = ambiguous meaning</li>
+              <li>No audible feedback at all</li>
+              <li>No low-water warning system</li>
+              <li>Buttons not sequenced to workflow</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ba-card">
+          <div class="ba-label after">✓ After</div>
+          <div class="ba-body">
+            <ul>
+              <li>Icon + text label pairs on each button</li>
+              <li>Dedicated visible temperature button</li>
+              <li>Consistent LED: blink = in progress only</li>
+              <li>3 beeps (complete) / 2 beeps (warning)</li>
+              <li>Blinking low-water indicator locks functions</li>
+              <li>Layout follows brew sequence left-to-right</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: 1.5rem;">
+        A shared <strong>Start/Stop button</strong> creates a clearer two-step mental model:
+        select mode first, then initiate. This reduces accidental triggers and makes the
+        system state always legible to the user.
+      </p>
+
+      <a class="btn-link" href="https://coffee-maker-ui-redesign.vercel.app/" target="_blank">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 3H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9M10 2h4v4M14 2 7 9"/>
+        </svg>
+        View Live Prototype
+      </a>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="fade-in">
+      <div class="section-eyebrow">05 — Outcomes</div>
+      <h2>What Changed and Why It Matters</h2>
+
+      <div class="outcome-list">
+        <div class="outcome-item">
+          <div class="outcome-num">01</div>
+          <div class="outcome-text">
+            <strong>Discoverability without a manual.</strong> Text labels alongside icons mean a first-time user can identify every control without any reference material.
+          </div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-num">02</div>
+          <div class="outcome-text">
+            <strong>Unambiguous system status.</strong> Consistent LED semantics (blinking = active process only) combined with distinct audio tones eliminate the feedback guessing game.
+          </div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-num">03</div>
+          <div class="outcome-text">
+            <strong>Error prevention over error recovery.</strong> The low-water lock prevents users from starting a brew that will fail mid-extraction — a common frustration point.
+          </div>
+        </div>
+        <div class="outcome-item">
+          <div class="outcome-num">04</div>
+          <div class="outcome-text">
+            <strong>Workflow-aligned layout.</strong> Button sequence mirrors the cognitive model of making coffee, reducing the mental effort required to operate the machine correctly.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection -->
+    <section class="fade-in">
+      <div class="section-eyebrow">06 — Reflection</div>
+      <h2>What I Learned</h2>
+      <div class="reflection-box">
+        <p>
+          This project made me think differently about the relationship between aesthetics
+          and usability. The KitchenAid machine isn't a bad design — it's an incomplete one.
+          It optimizes for visual elegance and stops short of asking: <em>what does the user
+          need to know at each moment?</em>
+        </p>
+        <p>
+          Applying Norman's framework revealed that <strong>usability failures are rarely
+          random</strong> — they cluster around specific gaps: a missing signifier here,
+          an inconsistent feedback convention there. Naming these precisely is what separates
+          a UX critique from a general complaint.
+        </p>
+        <p>
+          The peer review process reinforced one practical lesson: expanding the affordance
+          section with specific visual comparisons (decorative vs. interactive button shapes)
+          made the analysis significantly more persuasive than abstract description alone.
+          Show, don't just tell — even in written analysis.
+        </p>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Nav Buttons -->
+    <div style="padding-bottom: 4rem; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+      <a class="btn-link" href="https://coffee-maker-ui-redesign.vercel.app/" target="_blank">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 3H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9M10 2h4v4M14 2 7 9"/>
+        </svg>
+        Live Prototype
+      </a>
+      <a class="btn-link ghost" href="index.html">← Back to Portfolio</a>
+    </div>
+
+  </main>
+
+  <footer>Huiying Chung · UX/UI + Front-End Portfolio · 2026</footer>
+
+  <script src="coffeemaker-ui.js"></script>
+</body>
+</html>

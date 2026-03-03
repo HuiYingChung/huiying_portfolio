@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Cafe — Case Study · Hui Chung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="little-cafe-case-study.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">Hui<span>.</span></span>
+    <div class="nav-right">
+      <a class="nav-back" href="index.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M10 12L6 8l4-4"/>
+        </svg>
+        Back to work
+      </a>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+        <!-- sun -->
+        <svg class="icon-sun" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="10" cy="10" r="4"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.93 4.93l1.41 1.41M13.66 13.66l1.41 1.41M4.93 15.07l1.41-1.41M13.66 6.34l1.41-1.41"/>
+        </svg>
+        <!-- moon -->
+        <svg class="icon-moon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-meta">
+      <span class="hero-tag">Case Study</span>
+      <span class="hero-year">GIT 417 · ASU · 2025</span>
+    </div>
+    <h1>Little <em>Cafe</em></h1>
+    <p class="hero-desc">A single-page e-commerce concept for a boutique handmade cafe — designed and built with semantic HTML, vanilla JavaScript, and a sticky shopping cart experience.</p>
+    <div class="hero-chips">
+      <span class="chip">HTML5</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Figma</span>
+      <span class="chip">Responsive Design</span>
+      <span class="chip">UX / Interaction Design</span>
+    </div>
+  </header>
+
+  <div class="page-divider"></div>
+
+  <!-- 01 OVERVIEW -->
+  <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
+    <div class="section-label">Overview</div>
+    <div class="section-body">
+      <h2>A small supply station for your busy day.</h2>
+      <p>Little Cafe is a fictional micro-cafe concept built as the final project for GIT 417. The shop carries a tightly curated menu: two espresso drinks, two breakfast croissants, and two artisan cookies — six products total.</p>
+      <p>The project demonstrates <strong>semantic HTML5</strong>, <strong>modular CSS with custom properties</strong>, and <strong>vanilla JavaScript</strong> — including DOM manipulation, a dynamic shopping cart, regex-based form validation with inline errors, and a complete dark/light mode system. All code was written from scratch without frameworks.</p>
+
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-value">6</span>
+          <span class="stat-label">Products</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">1</span>
+          <span class="stat-label">HTML file</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">0</span>
+          <span class="stat-label">Frameworks</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">~0</span>
+          <span class="stat-label">div tags (self-challenge)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+
+  <!-- 02 CONCEPT -->
+  <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
+    <div class="section-label">Concept</div>
+    <div class="section-body">
+      <h2>What the requirements inspired.</h2>
+      <p>The cost calculator requirement aligned perfectly with the mental model of a quick-service morning stop: pick a couple of items, see the total update instantly, check out. I wanted to build something that felt genuinely real — not a generic template exercise.</p>
+      <p>I deliberately chose a <strong>small, curated menu</strong> rather than a large catalog. The constraint strengthened the design: a focused shop section that matched the cafe's intimate, boutique identity.</p>
+
+      <div class="callout">
+        <p>The fixed 1280px layout also influenced the shop structure. Two columns — products on the left, cart always visible on the right — <strong>mimics holding a physical menu while watching your order tally up like a receipt.</strong></p>
+      </div>
+
+      <h3>Design System</h3>
+      <div class="swatch-row">
+        <div class="swatch">
+          <div class="swatch-dot" style="background:#7D9D86;"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Sage Green</span>
+            <span class="swatch-hex">#7D9D86</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background:#D98324;"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Warm Orange</span>
+            <span class="swatch-hex">#D98324</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background:#FAF5EE; border-color: rgba(0,0,0,0.15);"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Cream (Light)</span>
+            <span class="swatch-hex">#FAF5EE</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-dot" style="background:#1A0E07;"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Espresso (Dark)</span>
+            <span class="swatch-hex">#1A0E07</span>
+          </div>
+        </div>
+      </div>
+      <p>Typography pairs <strong>Quicksand</strong> (rounded, friendly geometry for UI) with <strong>Caveat</strong> (handwritten feel in the About section) — reinforcing the artisan brand without sacrificing readability.</p>
+    </div>
+  </section>
+
+  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+
+  <!-- 03 PROCESS -->
+  <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
+    <div class="section-label">Process</div>
+    <div class="section-body">
+      <h2>From wireframe to working code.</h2>
+      <p>I built the site in deliberate phases, resolving each layer of complexity before moving to the next.</p>
+
+      <div class="phase-list">
+        <div class="phase-item">
+          <div class="phase-num">01</div>
+          <div class="phase-content">
+            <h4>Discovery & Content Planning</h4>
+            <p>Defined the shop concept, product lineup, brand voice, and full information architecture before writing any code. Created a content inventory of all six items with names, descriptions, and pricing.</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-num">02</div>
+          <div class="phase-content">
+            <h4>Visual Design</h4>
+            <p>Established the Sage Green + Warm Orange color system as CSS custom properties, enabling the dark/light mode toggle as a single class swap on body.dark-mode. Locked in type choices and spacing tokens.</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-num">03</div>
+          <div class="phase-content">
+            <h4>Wireframing (Figma)</h4>
+            <p>Built low-fidelity wireframes before touching code. The most critical decision: two-column shop layout with sticky cart sidebar, confirmed to keep the order total always visible — reducing checkout friction.</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-num">04</div>
+          <div class="phase-content">
+            <h4>The "Zero Div" Challenge</h4>
+            <p>Challenged myself to write semantic HTML with almost zero div tags — using &lt;section&gt;, &lt;article&gt;, &lt;hgroup&gt;, &lt;aside&gt;, &lt;figure&gt; throughout. This improved accessibility and made JS selection predictable.</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-num">05</div>
+          <div class="phase-content">
+            <h4>JavaScript</h4>
+            <p>Cart logic (add/remove/re-render), real-time total with 8% tax, hero fade carousel, contact form with conditional regex validation, customer object creation on submit, and localStorage theme persistence.</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-num">06</div>
+          <div class="phase-content">
+            <h4>Responsive Design & Mobile UX</h4>
+            <p>Rebuilt the layout for mobile — and identified a new problem in the process. See the next section.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+
+  <!-- 04 MOBILE UX DECISION -->
+  <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
+    <div class="section-label">UX Decision</div>
+    <div class="section-body">
+      <h2>The mobile cart problem — and how I solved it.</h2>
+      <p>The two-column desktop layout works because both panels are always visible. On mobile, that collapses to a single column — and the cart gets pushed below the entire product list. A user could add items and have <strong>no feedback about where their order is</strong>, or how to check out without scrolling to the bottom.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🧾</div>
+          <h4>Fixed cart icon</h4>
+          <p>Stays anchored in the corner at all times — always reachable, regardless of scroll position.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔢</div>
+          <h4>Live badge counter</h4>
+          <p>Updates every time an item is added or removed, giving instant visual confirmation of cart state.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h4>Anchor jump to cart</h4>
+          <p>Tapping the icon jumps to the Your Order section — no scrolling, direct path to checkout.</p>
+        </div>
+      </div>
+
+      <p>This pattern mirrors what users already know from mobile ordering apps. The anchor jump is a deliberate, practical choice: straightforward to implement, and meaningfully better than offering no shortcut at all.</p>
+
+      <div class="callout">
+        <p><strong>Thinking ahead:</strong> A slide-up drawer would eliminate the back-and-forth of jumping to the cart and scrolling back up to keep ordering. That's the logical next iteration — but for this project, the anchor jump solved the core problem cleanly.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+
+  <!-- 05 AI DISCLOSURE -->
+  <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
+    <div class="section-label">Process Note</div>
+    <div class="section-body">
+      <h2>Working with AI — openly.</h2>
+      <p>I used AI tools (GitHub Copilot within VS Code, and Claude by Anthropic) as collaborative thinking and learning partners throughout this project. I want to be transparent about what that actually looked like:</p>
+
+      <div class="ai-disclosure">
+        <div class="ai-disclosure-header">
+          <span class="ai-badge">Transparent</span>
+          <h4>How AI was used in this project</h4>
+        </div>
+        <ul class="bullet-list">
+          <li><strong>Concept development</strong> — used AI as a sounding board to refine the brand name, tagline, and voice before any design work.</li>
+          <li><strong>JavaScript learning</strong> — when I didn't yet understand cart state logic or conditional form validation, I asked AI to explain the concepts before writing the code myself. Like asking a senior developer to walk through the reasoning.</li>
+          <li><strong>Debugging</strong> — described problems to AI and worked through solutions collaboratively. Understanding <em>why</em> something broke was always the goal, not just getting a fix.</li>
+          <li><strong>Design decisions</strong> — used AI to list trade-offs (sticky cart vs. modal, color token structure for dark mode). All final calls were mine.</li>
+          <li><strong>Mobile UX feature</strong> — the fixed cart icon and responsive rebuild were developed with AI assistance, after I identified the problem myself.</li>
+        </ul>
+        <p style="margin-top:4px;">All code was written and typed by me. I believe using AI as a learning accelerator is an honest professional skill — and I'd rather document this openly than leave it out.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+
+  <!-- 06 REFLECTION -->
+  <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
+    <div class="section-label">Reflection</div>
+    <div class="section-body">
+      <h2>What I learned.</h2>
+
+      <h3>What I struggled with</h3>
+      <p>Cart state management was the steepest climb — pushing product objects, removing items by ID, and rebuilding the DOM correctly every time without duplicating nodes or losing state. Conditional form validation (phone field only validates if the user picks phone; email only if email) also took several iterations to clean up.</p>
+
+      <h3>What I enjoyed most</h3>
+      <p>The moment the Add button was clicked and the cart total updated instantly — that was genuinely satisfying. Watching the entire color system flip from warm cream to deep espresso with a single toggle was also a highlight. The Zero Div challenge gave me more confidence in writing meaningful, accessible HTML.</p>
+
+      <h3>The bigger takeaway</h3>
+      <p>Going back to make the site responsive — and realizing mid-process that layout wasn't the only thing that needed fixing on mobile — was the most useful learning. <strong>Asking "what does a user actually need here" rather than "does this display correctly"</strong> is the difference between a coded exercise and a considered design.</p>
+
+      <h3>Next steps</h3>
+      <ul class="bullet-list" style="margin-top:8px;">
+        <li>Upgrade the mobile cart to a slide-up drawer (no anchor jump needed)</li>
+        <li>Backend: connect contact form to Formspree or EmailJS</li>
+        <li>Add +/− quantity controls on cart line items</li>
+        <li>Refactor JS toward ES6+ (arrow functions, destructuring, array methods)</li>
+        <li>Full accessibility audit with Lighthouse / axe</li>
+        <li>SEO: meta description, Open Graph, JSON-LD for LocalBusiness</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section reveal">
+    <div class="cta-inner">
+      <h2>See it live.</h2>
+      <p>The full site and Behance process documentation are publicly available.</p>
+      <div class="cta-links">
+        <a class="btn btn-primary" href="https://huiyingchung.github.io/coffee-shop-project/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 3H3a1 1 0 00-1 1v9a1 1 0 001 1h9a1 1 0 001-1v-3M9 2h5m0 0v5m0-5L8 9"/>
+          </svg>
+          Live Site
+        </a>
+        <a class="btn btn-secondary" href="https://www.behance.net/gallery/239877627/Coffee-Shop-Single-page-Site" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="4" width="5" height="8" rx="1"/>
+            <path d="M9 6h5M9 10h4"/>
+          </svg>
+          Behance
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Hui Chung</p>
+    <a href="index.html">← Back to portfolio</a>
+  </footer>
+
+  <script src="little-cafe-case-study.js" defer></script>
+</body>
+</html>
