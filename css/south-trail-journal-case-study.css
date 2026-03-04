@@ -80,11 +80,11 @@ body {
   display: flex; gap: 2.5rem; flex-wrap: wrap;
   opacity: 0; animation: fadeUp 0.8s 0.65s forwards;
 }
-.meta-item label {
+.meta-item dt {
   display: block; font-size: 0.68rem; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--purple-xl); margin-bottom: 0.3rem;
 }
-.meta-item span { font-size: 0.9rem; color: var(--text); }
+.meta-item dd { font-size: 0.9rem; color: var(--text); }
 
 .hero-right {
   position: relative; overflow: hidden;

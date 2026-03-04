@@ -14,9 +14,9 @@
 <body>
 
   <!-- NAV -->
-  <nav>
+  <nav aria-label="Site navigation">
     <a href="index.html" class="nav-logo">Huiying Chung</a>
-    <div class="nav-right">
+    <div class="nav-controls">
       <a class="nav-back" href="index.html#work">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M10 12L6 8l4-4"/>
@@ -44,34 +44,34 @@
     </div>
     <h1>Little <em>Cafe</em></h1>
     <p class="hero-desc">A single-page e-commerce concept for a boutique handmade cafe — designed and built with semantic HTML, vanilla JavaScript, and a sticky shopping cart experience.</p>
-    <div class="hero-chips">
-      <span class="chip">HTML5</span>
-      <span class="chip">CSS</span>
-      <span class="chip">JavaScript</span>
-      <span class="chip">Figma</span>
-      <span class="chip">Responsive Design</span>
-      <span class="chip">UX / Interaction Design</span>
-    </div>
+    <ul class="hero-chips">
+      <li class="chip">HTML5</li>
+      <li class="chip">CSS</li>
+      <li class="chip">JavaScript</li>
+      <li class="chip">Figma</li>
+      <li class="chip">Responsive Design</li>
+      <li class="chip">UX / Interaction Design</li>
+    </ul>
   </header>
 
   <hr class="page-divider" />
 
   <!-- TL;DR -->
   <div class="reveal" style="max-width:1080px;margin:clamp(48px,7vw,80px) auto 0;padding:0 clamp(24px,8vw,120px);">
-    <div class="tldr-strip">
+    <dl class="tldr-strip">
       <div class="tldr-item">
-        <div class="tldr-label">Problem</div>
-        <div class="tldr-text">Course required a functional single-page shop — real cart logic, form validation, dark mode, responsive UX — all in vanilla JS, no frameworks</div>
+        <dt class="tldr-label">Problem</dt>
+        <dd class="tldr-text">Course required a functional single-page shop — real cart logic, form validation, dark mode, responsive UX — all in vanilla JS, no frameworks</dd>
       </div>
       <div class="tldr-item">
-        <div class="tldr-label">Built</div>
-        <div class="tldr-text">Boutique cafe concept in semantic HTML5 + vanilla JS + CSS custom properties. Zero frameworks, ~zero div tags — every element is purposeful</div>
+        <dt class="tldr-label">Built</dt>
+        <dd class="tldr-text">Boutique cafe concept in semantic HTML5 + vanilla JS + CSS custom properties. Zero frameworks, ~zero div tags — every element is purposeful</dd>
       </div>
       <div class="tldr-item">
-        <div class="tldr-label">Result</div>
-        <div class="tldr-text">Real-time cart with 8% tax, regex form validation, dark/light toggle, mobile-optimized UX — deployed to GitHub Pages</div>
+        <dt class="tldr-label">Result</dt>
+        <dd class="tldr-text">Real-time cart with 8% tax, regex form validation, dark/light toggle, mobile-optimized UX — deployed to GitHub Pages</dd>
       </div>
-    </div>
+    </dl>
   </div>
 
   <!-- Stats -->
@@ -110,34 +110,34 @@
 
       <h3>Design System</h3>
       <div class="swatch-row">
-        <div class="swatch">
+        <figure class="swatch">
           <div class="swatch-dot" style="background:#7D9D86;"></div>
-          <div class="swatch-info">
+          <figcaption class="swatch-info">
             <span class="swatch-name">Sage Green</span>
             <span class="swatch-hex">#7D9D86</span>
-          </div>
-        </div>
-        <div class="swatch">
+          </figcaption>
+        </figure>
+        <figure class="swatch">
           <div class="swatch-dot" style="background:#D98324;"></div>
-          <div class="swatch-info">
+          <figcaption class="swatch-info">
             <span class="swatch-name">Warm Orange</span>
             <span class="swatch-hex">#D98324</span>
-          </div>
-        </div>
-        <div class="swatch">
+          </figcaption>
+        </figure>
+        <figure class="swatch">
           <div class="swatch-dot" style="background:#FAF5EE; border-color: rgba(0,0,0,0.15);"></div>
-          <div class="swatch-info">
+          <figcaption class="swatch-info">
             <span class="swatch-name">Cream (Light)</span>
             <span class="swatch-hex">#FAF5EE</span>
-          </div>
-        </div>
-        <div class="swatch">
+          </figcaption>
+        </figure>
+        <figure class="swatch">
           <div class="swatch-dot" style="background:#1A0E07;"></div>
-          <div class="swatch-info">
+          <figcaption class="swatch-info">
             <span class="swatch-name">Espresso (Dark)</span>
             <span class="swatch-hex">#1A0E07</span>
-          </div>
-        </div>
+          </figcaption>
+        </figure>
       </div>
       <p>Typography pairs <strong>Quicksand</strong> (rounded, friendly geometry for UI) with <strong>Caveat</strong> (handwritten feel in the About section) — reinforcing the artisan brand without sacrificing readability.</p>
     </div>
@@ -209,21 +209,21 @@
       <p>The two-column desktop layout works because both panels are always visible. On mobile, that collapses to a single column — and the cart gets pushed below the entire product list. A user could add items and have <strong>no feedback about where their order is</strong>, or how to check out without scrolling to the bottom.</p>
 
       <div class="card-grid">
-        <div class="card">
+        <article class="card">
           <span class="card-icon">🧾</span>
           <h4>Fixed cart icon</h4>
           <p>Stays anchored in the corner at all times — always reachable, regardless of scroll position.</p>
-        </div>
-        <div class="card">
+        </article>
+        <article class="card">
           <span class="card-icon">🔢</span>
           <h4>Live badge counter</h4>
           <p>Updates every time an item is added or removed, giving instant visual confirmation of cart state.</p>
-        </div>
-        <div class="card">
+        </article>
+        <article class="card">
           <span class="card-icon">⚡</span>
           <h4>Anchor jump to cart</h4>
           <p>Tapping the icon jumps to the Your Order section — no scrolling, direct path to checkout.</p>
-        </div>
+        </article>
       </div>
 
       <p>This pattern mirrors what users already know from mobile ordering apps. The anchor jump is a deliberate, practical choice: straightforward to implement, and meaningfully better than offering no shortcut at all.</p>
@@ -289,13 +289,13 @@
       <p>The full site and Behance process documentation are publicly available.</p>
       <div class="cta-links">
         <a class="btn btn-primary" href="https://huiyingchung.github.io/coffee-shop-project/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
             <path d="M6 3H3a1 1 0 00-1 1v9a1 1 0 001 1h9a1 1 0 001-1v-3M9 2h5m0 0v5m0-5L8 9"/>
           </svg>
           Live Site
         </a>
         <a class="btn btn-secondary" href="https://www.behance.net/gallery/239877627/Coffee-Shop-Single-page-Site" target="_blank" rel="noopener">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
             <rect x="2" y="4" width="5" height="8" rx="1"/>
             <path d="M9 6h5M9 10h4"/>
           </svg>

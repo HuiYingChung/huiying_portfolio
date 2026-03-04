@@ -72,7 +72,7 @@ nav {
   opacity: 0.85;
 }
 .nav-logo span { color: var(--accent-light); }
-.nav-right { display: flex; align-items: center; gap: 20px; }
+
 
 .theme-btn {
   width: 36px; height: 36px;
@@ -144,7 +144,7 @@ nav {
   margin-bottom: 40px;
 }
 .hero-chips {
-  display: flex; flex-wrap: wrap; gap: 8px;
+  display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0;
 }
 .chip {
   font-size: 12px;

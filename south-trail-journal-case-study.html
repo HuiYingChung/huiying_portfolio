@@ -17,9 +17,9 @@
 <body>
 
   <!-- NAV -->
-  <nav>
+  <nav aria-label="Site navigation">
     <a href="index.html" class="nav-logo">Huiying Chung</a>
-    <div style="display:flex;align-items:center;gap:0.75rem;">
+    <div class="nav-controls">
       <a class="nav-back" href="index.html#work">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M10 3L5 8l5 5"/>
@@ -34,53 +34,53 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero" style="padding: 0; background: var(--bg);">
+  <header class="hero" style="padding: 0; background: var(--bg);">
     <div class="hero-left" style="background: var(--bg);">
       <span class="hero-tag">Case Study · Front-End Development</span>
       <h1 class="hero-title">South Trail<br /><em>Journal</em></h1>
       <p class="hero-desc">A multi-page hiking trail website built from wireframe to live deployment — designed for nature lovers across Texas, Oklahoma, Missouri, and Arkansas.</p>
-      <div class="hero-meta">
+      <dl class="hero-meta">
         <div class="meta-item">
-          <label>Course</label>
-          <span>CIS 300 — ASU</span>
+          <dt>Course</dt>
+          <dd>CIS 300 — ASU</dd>
         </div>
         <div class="meta-item">
-          <label>Year</label>
-          <span>Summer 2025</span>
+          <dt>Year</dt>
+          <dd>Summer 2025</dd>
         </div>
         <div class="meta-item">
-          <label>Stack</label>
-          <span>HTML / CSS / JS</span>
+          <dt>Stack</dt>
+          <dd>HTML / CSS / JS</dd>
         </div>
         <div class="meta-item">
-          <label>Live</label>
-          <span><a href="https://huiyingchung.github.io/south_trail_journal/" target="_blank" style="color: var(--purple-xl); text-decoration: none;">↗ View Site</a></span>
+          <dt>Live</dt>
+          <dd><a href="https://huiyingchung.github.io/south_trail_journal/" target="_blank" style="color: var(--purple-xl); text-decoration: none;">↗ View Site</a></dd>
         </div>
-      </div>
+      </dl>
     </div>
     <div class="hero-right">
       <div class="hero-img-wrapper">
         <img src="images/case-study-card-4.png" alt="South Trail Journal website screenshot" class="hero-mockup">
       </div>
     </div>
-  </section>
+  </header>
 
   <!-- TL;DR -->
   <div class="reveal" style="padding: 4rem clamp(1.5rem, 5vw, 5rem) 2rem;">
-    <div class="tldr-strip">
+    <dl class="tldr-strip">
       <div class="tldr-item">
-        <div class="tldr-label">Problem</div>
-        <div class="tldr-text">Course required a full multi-page site — information architecture, wireframes, responsive layout, SEO, Google Analytics — solo, in 6 weeks</div>
+        <dt class="tldr-label">Problem</dt>
+        <dd class="tldr-text">Course required a full multi-page site — information architecture, wireframes, responsive layout, SEO, Google Analytics — solo, in 6 weeks</dd>
       </div>
       <div class="tldr-item">
-        <div class="tldr-label">Approach</div>
-        <div class="tldr-text">Full front-end lifecycle: hand-drawn wireframes → Figma mockups → HTML/CSS/JS → GitHub Pages. Landscape-inspired design system, all photos self-shot</div>
+        <dt class="tldr-label">Approach</dt>
+        <dd class="tldr-text">Full front-end lifecycle: hand-drawn wireframes → Figma mockups → HTML/CSS/JS → GitHub Pages. Landscape-inspired design system, all photos self-shot</dd>
       </div>
       <div class="tldr-item">
-        <div class="tldr-label">Result</div>
-        <div class="tldr-text">6-page W3C-validated site, live on GitHub Pages — responsive across all breakpoints, with SEO meta tags and Google Analytics on every page</div>
+        <dt class="tldr-label">Result</dt>
+        <dd class="tldr-text">6-page W3C-validated site, live on GitHub Pages — responsive across all breakpoints, with SEO meta tags and Google Analytics on every page</dd>
       </div>
-    </div>
+    </dl>
   </div>
 
   <!-- OVERVIEW -->
@@ -89,18 +89,18 @@
       <div class="overview-left reveal">
         <span class="section-num">01 — Overview</span>
         <div class="stat-row" style="margin-top: 0.5rem;">
-          <div class="stat-card">
+          <figure class="stat-card">
             <span class="stat-num">6</span>
             <span class="stat-label">Pages Built</span>
-          </div>
-          <div class="stat-card">
+          </figure>
+          <figure class="stat-card">
             <span class="stat-num">100%</span>
             <span class="stat-label">Self-Shot Photos</span>
-          </div>
-          <div class="stat-card">
+          </figure>
+          <figure class="stat-card">
             <span class="stat-num">W3C</span>
             <span class="stat-label">Validated HTML</span>
-          </div>
+          </figure>
         </div>
       </div>
       <div class="overview-right reveal">
@@ -160,36 +160,36 @@
     <div class="reveal" style="margin-top: 2.5rem; margin-bottom: 3rem;">
       <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--moss); margin-bottom: 1rem;">Color System</p>
       <div class="palette-row">
-        <div class="swatch">
+        <figure class="swatch">
           <div class="swatch-block" style="background: #f9f5ec;"></div>
           <span class="swatch-hex">#f9f5ec</span>
           <span class="swatch-name">Background</span>
-        </div>
-        <div class="swatch">
+        </figure>
+        <figure class="swatch">
           <div class="swatch-block" style="background: #4a6741;"></div>
           <span class="swatch-hex">#4a6741</span>
           <span class="swatch-name">Forest</span>
-        </div>
-        <div class="swatch">
+        </figure>
+        <figure class="swatch">
           <div class="swatch-block" style="background: #6e8d5d;"></div>
           <span class="swatch-hex">#6e8d5d</span>
           <span class="swatch-name">Primary</span>
-        </div>
-        <div class="swatch">
+        </figure>
+        <figure class="swatch">
           <div class="swatch-block" style="background: #c4a484;"></div>
           <span class="swatch-hex">#c4a484</span>
           <span class="swatch-name">Secondary</span>
-        </div>
-        <div class="swatch">
+        </figure>
+        <figure class="swatch">
           <div class="swatch-block" style="background: #a3522d;"></div>
           <span class="swatch-hex">#a3522d</span>
           <span class="swatch-name">Accent</span>
-        </div>
-        <div class="swatch">
+        </figure>
+        <figure class="swatch">
           <div class="swatch-block" style="background: #262626;"></div>
           <span class="swatch-hex">#262626</span>
           <span class="swatch-name">Text</span>
-        </div>
+        </figure>
       </div>
       <p class="section-body" style="margin-top: 1.25rem; max-width: 70ch;">The palette was derived from the landscape itself — warm parchment backgrounds evoking worn trail maps, earthy greens reflecting forest canopy, and terracotta accents referencing Texas Hill Country rock. All colors were defined as CSS custom properties in <code style="font-family: 'DM Mono', monospace; font-size: 0.85em; background: rgba(107,63,160,0.12); color: var(--purple-xl); padding: 0.1em 0.4em; border-radius: 3px;">:root</code> for consistency across all 6 pages.</p>
     </div>

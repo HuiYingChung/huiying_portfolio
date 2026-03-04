@@ -15,9 +15,9 @@
 <body>
 
   <!-- Nav -->
-  <nav>
+  <nav aria-label="Site navigation">
     <a href="index.html" class="nav-logo">Huiying Chung</a>
-    <div style="display:flex;align-items:center;gap:0.75rem;">
+    <div class="nav-controls">
       <a class="nav-back" href="index.html#work">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M10 3L5 8l5 5"/>
@@ -33,39 +33,41 @@
 
   <!-- Hero -->
   <header class="hero fade-in">
-    <div class="hero-label">UX Analysis + Interface Redesign</div>
+    <p class="hero-label">UX Analysis + Interface Redesign</p>
     <h1>Redesigning a KitchenAid Espresso Machine Interface</h1>
     <p class="hero-sub">
       When a machine looks good but works badly — applying Norman's design principles
       to uncover usability failures and propose a clearer, safer interaction model.
     </p>
-    <div class="hero-meta">
+    <dl class="hero-meta">
       <div class="meta-item">
-        <span class="meta-label">Role</span>
-        <span class="meta-value">UX Researcher + Interface Designer</span>
+        <dt class="meta-label">Role</dt>
+        <dd class="meta-value">UX Researcher + Interface Designer</dd>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Context</span>
-        <span class="meta-value">ASU · TWC 150 Course Project</span>
+        <dt class="meta-label">Context</dt>
+        <dd class="meta-value">ASU · TWC 150 Course Project</dd>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Year</span>
-        <span class="meta-value">2026</span>
+        <dt class="meta-label">Year</dt>
+        <dd class="meta-value">2026</dd>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Tools</span>
-        <span class="meta-value">HTML/CSS/JS · Vercel · UX Analysis</span>
+        <dt class="meta-label">Tools</dt>
+        <dd class="meta-value">HTML/CSS/JS · Vercel · UX Analysis</dd>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Skills</span>
-        <div class="tags" style="margin-top:0.2rem">
-          <span class="tag">Usability Analysis</span>
-          <span class="tag">Norman's Principles</span>
-          <span class="tag">UI Redesign</span>
-          <span class="tag">Prototyping</span>
-        </div>
+        <dt class="meta-label">Skills</dt>
+        <dd>
+          <ul class="tags" style="margin-top:0.2rem">
+            <li class="tag">Usability Analysis</li>
+            <li class="tag">Norman's Principles</li>
+            <li class="tag">UI Redesign</li>
+            <li class="tag">Prototyping</li>
+          </ul>
+        </dd>
       </div>
-    </div>
+    </dl>
   </header>
 
   <!-- Content -->
@@ -74,20 +76,20 @@
     <hr class="divider" />
 
     <!-- TL;DR -->
-    <div class="tldr-strip fade-in">
+    <dl class="tldr-strip fade-in">
       <div class="tldr-item">
-        <div class="tldr-label">Problem</div>
-        <div class="tldr-text">A visually minimal espresso machine with 4 usability failures — missing signifiers, ambiguous feedback, broken mental model, hidden interactions</div>
+        <dt class="tldr-label">Problem</dt>
+        <dd class="tldr-text">A visually minimal espresso machine with 4 usability failures — missing signifiers, ambiguous feedback, broken mental model, hidden interactions</dd>
       </div>
       <div class="tldr-item">
-        <div class="tldr-label">Approach</div>
-        <div class="tldr-text">Applied Norman's 6 design principles to map every failure point, then redesigned to preserve aesthetics while fixing the interaction model</div>
+        <dt class="tldr-label">Approach</dt>
+        <dd class="tldr-text">Applied Norman's 6 design principles to map every failure point, then redesigned to preserve aesthetics while fixing the interaction model</dd>
       </div>
       <div class="tldr-item">
-        <div class="tldr-label">Result</div>
-        <div class="tldr-text">6 violations resolved across 4 principles — first-time users can operate the machine without the manual</div>
+        <dt class="tldr-label">Result</dt>
+        <dd class="tldr-text">6 violations resolved across 4 principles — first-time users can operate the machine without the manual</dd>
       </div>
-    </div>
+    </dl>
 
     <!-- Problem -->
     <section class="fade-in">
@@ -178,8 +180,8 @@
       </p>
 
       <div class="before-after">
-        <div class="ba-card">
-          <div class="ba-label before">⚠ Before</div>
+        <figure class="ba-card">
+          <figcaption class="ba-label before">⚠ Before</figcaption>
           <div class="ba-body">
             <ul>
               <li>Icons only, no text labels</li>
@@ -190,9 +192,9 @@
               <li>Buttons not sequenced to workflow</li>
             </ul>
           </div>
-        </div>
-        <div class="ba-card">
-          <div class="ba-label after">✓ After</div>
+        </figure>
+        <figure class="ba-card">
+          <figcaption class="ba-label after">✓ After</figcaption>
           <div class="ba-body">
             <ul>
               <li>Icon + text label pairs on each button</li>
@@ -203,7 +205,7 @@
               <li>Layout follows brew sequence left-to-right</li>
             </ul>
           </div>
-        </div>
+        </figure>
       </div>
 
       <p style="margin-top: 1.5rem;">
@@ -225,20 +227,20 @@
       <p class="section-eyebrow">04 — Outcomes</p>
       <h2>What Changed and Why It Matters</h2>
 
-      <div class="stat-strip">
+      <dl class="stat-strip">
         <div class="stat-item">
-          <span class="stat-num">6</span>
-          <span class="stat-label">Usability violations identified</span>
+          <dt class="stat-num">6</dt>
+          <dd class="stat-label">Usability violations identified</dd>
         </div>
         <div class="stat-item">
-          <span class="stat-num">4</span>
-          <span class="stat-label">Norman principles violated</span>
+          <dt class="stat-num">4</dt>
+          <dd class="stat-label">Norman principles violated</dd>
         </div>
         <div class="stat-item">
-          <span class="stat-num">6/6</span>
-          <span class="stat-label">Resolved in redesign</span>
+          <dt class="stat-num">6/6</dt>
+          <dd class="stat-label">Resolved in redesign</dd>
         </div>
-      </div>
+      </dl>
 
       <ol class="outcome-list">
         <li class="outcome-item">
@@ -297,7 +299,7 @@
     <hr class="divider" />
 
     <!-- Nav Buttons -->
-    <div style="padding-bottom: 4rem; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+    <nav class="case-links" aria-label="Case study links">
       <a class="btn-link" href="https://coffee-maker-ui-redesign.vercel.app/" target="_blank">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M7 3H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9M10 2h4v4M14 2 7 9"/>
@@ -305,7 +307,7 @@
         Live Prototype
       </a>
       <a class="btn-link ghost" href="index.html#work">← Back to Portfolio</a>
-    </div>
+    </nav>
 
   </main>
 

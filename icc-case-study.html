@@ -16,9 +16,9 @@
 <body>
 
 <!-- NAV -->
-<nav>
+<nav aria-label="Site navigation">
   <a href="index.html" class="nav-logo">Huiying Chung</a>
-  <div style="display:flex;align-items:center;gap:0.75rem;">
+  <div class="nav-controls">
     <a href="index.html#work" class="nav-back">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M10 3L5 8l5 5"/>
@@ -33,34 +33,34 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<header class="hero">
   <span class="hero-tag">UX / Visual Design / Information Architecture</span>
   <h1>ICC Houston<br><em>Website Redesign</em></h1>
   <p class="hero-sub">
     Redesigning Houston's oldest nonprofit Chinese school website — from a fragmented, outdated experience into a unified, parent-friendly platform.
   </p>
-  <div class="hero-meta">
+  <dl class="hero-meta">
     <div class="meta-item">
-      <span class="meta-label">Role</span>
-      <span class="meta-value">UX Designer (Solo)</span>
+      <dt class="meta-label">Role</dt>
+      <dd class="meta-value">UX Designer (Solo)</dd>
     </div>
     <div class="meta-item">
-      <span class="meta-label">Timeline</span>
-      <span class="meta-value">2025</span>
+      <dt class="meta-label">Timeline</dt>
+      <dd class="meta-value">2025</dd>
     </div>
     <div class="meta-item">
-      <span class="meta-label">Tools</span>
-      <span class="meta-value">Figma, WordPress</span>
+      <dt class="meta-label">Tools</dt>
+      <dd class="meta-value">Figma, WordPress</dd>
     </div>
     <div class="meta-item">
-      <span class="meta-label">Status</span>
-      <span class="meta-value meta-live">Live at icc-houston.org</span>
+      <dt class="meta-label">Status</dt>
+      <dd class="meta-value meta-live">Live at icc-houston.org</dd>
     </div>
-  </div>
-</section>
+  </dl>
+</header>
 
 <!-- COVER IMAGE -->
-<div class="cover-wrap">
+<figure class="cover-wrap">
   <!-- ✦ REPLACE: Full-width hero screenshot (new homepage) -->
   <div class="img-placeholder img-placeholder-lg img-slot" id="cover-img">
     <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -70,26 +70,26 @@
     <span class="ph-label">Replace with: Final Homepage Screenshot</span>
   </div>
   <!-- To insert: <img src="your-screenshot.png" alt="ICC Homepage Redesign"> -->
-</div>
+</figure>
 
 <!-- MAIN CONTENT -->
 <main class="container">
 
   <!-- TL;DR -->
-  <div class="tldr-strip fade-in">
+  <dl class="tldr-strip fade-in">
     <div class="tldr-item">
-      <div class="tldr-label">Problem</div>
-      <div class="tldr-text">Two conflicting websites, hidden navigation, and unclear registration left Houston families unable to find or enroll in ICC's programs</div>
+      <dt class="tldr-label">Problem</dt>
+      <dd class="tldr-text">Two conflicting websites, hidden navigation, and unclear registration left Houston families unable to find or enroll in ICC's programs</dd>
     </div>
     <div class="tldr-item">
-      <div class="tldr-label">Approach</div>
-      <div class="tldr-text">Stakeholder interviews → unified IA → 6 design decisions → Figma prototype handed to a WordPress dev team</div>
+      <dt class="tldr-label">Approach</dt>
+      <dd class="tldr-text">Stakeholder interviews → unified IA → 6 design decisions → Figma prototype handed to a WordPress dev team</dd>
     </div>
     <div class="tldr-item">
-      <div class="tldr-label">Result</div>
-      <div class="tldr-text">Live at icc-houston.org — one unified site, 3-click registration path, staff-maintainable without developer help</div>
+      <dt class="tldr-label">Result</dt>
+      <dd class="tldr-text">Live at icc-houston.org — one unified site, 3-click registration path, staff-maintainable without developer help</dd>
     </div>
-  </div>
+  </dl>
 
   <!-- BACKGROUND -->
   <section class="fade-in">
@@ -122,22 +122,22 @@
 
         <!-- Before / After -->
         <div class="before-after" style="margin-top:2rem;">
-          <div class="ba-card">
-            <div class="ba-header before"><span class="dot"></span> Before</div>
+          <figure class="ba-card">
+            <figcaption class="ba-header before"><span class="dot"></span> Before</figcaption>
             <!-- ✦ REPLACE: Old website screenshot -->
             <div class="img-placeholder img-placeholder-md img-slot">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
               <span class="ph-label">Old Website Screenshot</span>
             </div>
-          </div>
-          <div class="ba-card">
-            <div class="ba-header after"><span class="dot"></span> After</div>
+          </figure>
+          <figure class="ba-card">
+            <figcaption class="ba-header after"><span class="dot"></span> After</figcaption>
             <!-- ✦ REPLACE: New website screenshot -->
             <div class="img-placeholder img-placeholder-md img-slot">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
               <span class="ph-label">New Website Screenshot</span>
             </div>
-          </div>
+          </figure>
         </div>
         <p class="caption">Before: confusing navigation with hidden links / After: clear top-level structure with sidebar sub-nav</p>
       </div>
@@ -346,21 +346,21 @@
         <p>The redesigned site launched in 2025 and is now active at <strong>icc-houston.org</strong>. Key outcomes from the redesign:</p>
 
         <div class="outcome-grid">
-          <div class="outcome-card">
-            <div class="outcome-icon">🗂</div>
-            <div style="font-family:'Syne',sans-serif; font-weight:700; font-size:1.1rem; margin-bottom:4px;">1 Unified Site</div>
-            <div class="outcome-label">Two confusing domains → one navigable experience</div>
-          </div>
-          <div class="outcome-card">
-            <div class="outcome-icon">📋</div>
-            <div style="font-family:'Syne',sans-serif; font-weight:700; font-size:1.1rem; margin-bottom:4px;">3-Click Registration</div>
-            <div class="outcome-label">Homepage → Classes → Register, no dead ends</div>
-          </div>
-          <div class="outcome-card">
-            <div class="outcome-icon">🏫</div>
-            <div style="font-family:'Syne',sans-serif; font-weight:700; font-size:1.1rem; margin-bottom:4px;">Staff-Maintainable</div>
-            <div class="outcome-label">School can update content independently via WordPress</div>
-          </div>
+          <article class="outcome-card">
+            <p class="outcome-icon">🗂</p>
+            <h3 class="outcome-title">1 Unified Site</h3>
+            <p class="outcome-label">Two confusing domains → one navigable experience</p>
+          </article>
+          <article class="outcome-card">
+            <p class="outcome-icon">📋</p>
+            <h3 class="outcome-title">3-Click Registration</h3>
+            <p class="outcome-label">Homepage → Classes → Register, no dead ends</p>
+          </article>
+          <article class="outcome-card">
+            <p class="outcome-icon">🏫</p>
+            <h3 class="outcome-title">Staff-Maintainable</h3>
+            <p class="outcome-label">School can update content independently via WordPress</p>
+          </article>
         </div>
 
         <p style="margin-top:1.25rem; font-size:0.85rem; color:var(--ink3); padding:0.8rem 1rem; background:var(--bg2); border-radius:8px; border-left:3px solid var(--border); line-height:1.6;">
