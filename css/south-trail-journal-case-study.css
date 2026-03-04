@@ -352,14 +352,21 @@ section:nth-child(even) { background: var(--bg-2); }
 .thumb-news { background: linear-gradient(135deg, #2d1a55 0%, #8b5fc7 100%); }
 .thumb-contact { background: linear-gradient(135deg, #3d2060 0%, #5a3090 100%); }
 .thumb-trail-detail { background: linear-gradient(135deg, #251550 0%, #6B3FA0 100%); }
-.page-card-body { padding: 1.25rem; }
+.page-card-thumb img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top;
+  display: block;
+}
 .page-card-name {
   font-family: 'Syne', sans-serif;
-  font-size: 1rem; color: var(--text); margin-bottom: 0.35rem;
+  font-size: 1rem; color: var(--text);
+  padding: 1.25rem 1.25rem 0;
 }
+.page-card-desc { font-size: 0.82rem; color: var(--stone); padding: 0.35rem 1.25rem 0; }
 .page-features {
-  display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem;
-  list-style: none; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+  list-style: none; padding: 0.75rem 1.25rem 1.25rem;
 }
 .feature-tag {
   font-size: 0.65rem; padding: 0.2rem 0.6rem; border-radius: 3px;
