@@ -7,8 +7,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared.css">
-<link rel="stylesheet" href="icc-case-study.css">
+<link rel="stylesheet" href="css/shared.css">
+<link rel="stylesheet" href="css/icc-case-study.css">
 <script>
   (function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
 </script>
@@ -92,7 +92,7 @@
   </div>
 
   <!-- BACKGROUND -->
-  <div class="section fade-in">
+  <section class="fade-in">
     <div class="section-inner">
       <span class="section-label">Background</span>
       <div class="section-content">
@@ -101,23 +101,24 @@
         <p>I was brought in as the sole UX designer to lead the redesign from research through prototyping, working directly with school leadership and a development team in Bangalore.</p>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- PROBLEM -->
-  <div class="section fade-in">
+  <section class="fade-in">
     <div class="section-inner">
       <span class="section-label">Problem</span>
       <div class="section-content">
         <h2>Parents couldn't find what they needed</h2>
         <p>Through stakeholder interviews and analysis of the existing site, five core pain points emerged:</p>
 
-        <div class="pain-list">
-          <div class="pain-item"><span class="pain-num">01</span><span class="pain-text">Two websites with overlapping content created confusion for new and returning families alike</span></div>
-          <div class="pain-item"><span class="pain-num">02</span><span class="pain-text">Critical pages (Faculty, Gallery, Registration) were hidden inside a "Quick Links" dropdown — not intuitive</span></div>
-          <div class="pain-item"><span class="pain-num">03</span><span class="pain-text">Faculty information was spread across 3 separate pages with no visual structure or hierarchy</span></div>
-          <div class="pain-item"><span class="pain-num">04</span><span class="pain-text">Registration forms were plain-text links with no visual guidance or clear calls-to-action</span></div>
-          <div class="pain-item"><span class="pain-num">05</span><span class="pain-text">Outdated visual design (copyright 2021) eroded trust with prospective families</span></div>
-        </div>
+        <ol class="pain-list">
+          <li class="pain-item"><span class="pain-num">01</span><span class="pain-text">Two websites with overlapping content created confusion for new and returning families alike</span></li>
+          <li class="pain-item"><span class="pain-num">02</span><span class="pain-text">Critical pages (Faculty, Gallery, Registration) were hidden inside a "Quick Links" dropdown — not intuitive</span></li>
+          <li class="pain-item"><span class="pain-num">03</span><span class="pain-text">Faculty information was spread across 3 separate pages with no visual structure or hierarchy</span></li>
+          <li class="pain-item"><span class="pain-num">04</span><span class="pain-text">Registration forms were plain-text links with no visual guidance or clear calls-to-action</span></li>
+          <li class="pain-item"><span class="pain-num">05</span><span class="pain-text">Outdated visual design (copyright 2021) eroded trust with prospective families</span></li>
+        </ol>
 
         <!-- Before / After -->
         <div class="before-after" style="margin-top:2rem;">
@@ -141,10 +142,11 @@
         <p class="caption">Before: confusing navigation with hidden links / After: clear top-level structure with sidebar sub-nav</p>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- RESEARCH -->
-  <div class="section fade-in">
+  <section class="fade-in">
     <div class="section-inner">
       <span class="section-label">Research</span>
       <div class="section-content">
@@ -152,21 +154,21 @@
         <p>I conducted interviews with three key school staff members to surface real needs, and defined two user tasks to anchor the design process.</p>
 
         <div class="interview-cards">
-          <div class="interview-card">
+          <article class="interview-card">
             <div class="interview-role">Principal</div>
             <div class="interview-name">Tina</div>
             <p class="interview-quote">"The site should feel professional and modern — I'd like it to be closer to St. John's School."</p>
-          </div>
-          <div class="interview-card">
+          </article>
+          <article class="interview-card">
             <div class="interview-role">Vice Principal</div>
             <div class="interview-name">Jennifer</div>
             <p class="interview-quote">"We need to clearly separate the three programs so parents don't confuse them."</p>
-          </div>
-          <div class="interview-card">
+          </article>
+          <article class="interview-card">
             <div class="interview-role">Registrar</div>
             <div class="interview-name">Jing Yi</div>
             <p class="interview-quote">"Registration info needs to be much clearer — maybe a tab layout would help."</p>
-          </div>
+          </article>
         </div>
 
         <h3 style="margin-top:2rem;">User Task Scenarios</h3>
@@ -182,10 +184,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- IA / FLOW -->
-  <div class="section fade-in">
+  <section class="fade-in">
     <div class="section-inner">
       <span class="section-label">Information Architecture</span>
       <div class="section-content">
@@ -213,16 +216,17 @@
         <p class="caption">IA flow mapping ICC_1 (main site) vs ICC_2 (Pre School branch) — created in Figma</p>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- DESIGN DECISIONS -->
-  <div class="section fade-in">
+  <section class="fade-in">
     <div class="section-inner">
       <span class="section-label">Design Decisions</span>
       <div class="section-content">
         <h2>Six decisions that shaped the redesign</h2>
 
-        <div class="decision-block">
+        <article class="decision-block">
           <div class="decision-num">Decision 01</div>
           <h3>Unified 5-Section Navigation</h3>
           <p>Replaced flat nav + hidden Quick Links with a clear structure: HOME / ABOUT / CLASSES / NEWS / OTHER INFO, with left-sidebar sub-navigation within each section. No more buried pages.</p>
@@ -230,9 +234,9 @@
           <div class="img-placeholder img-placeholder-sm img-slot" style="margin-top:1rem;">
             <span class="ph-label">Navigation Before vs After</span>
           </div>
-        </div>
+        </article>
 
-        <div class="decision-block">
+        <article class="decision-block">
           <div class="decision-num">Decision 02</div>
           <h3>Tab-Based Program Switching</h3>
           <p>Used consistent tab navigation (Saturday School / Elementary / Pre School) across About, Classes, Contact, and Locations pages — so parents can switch program context without navigating away.</p>
@@ -240,9 +244,9 @@
           <div class="img-placeholder img-placeholder-sm img-slot" style="margin-top:1rem;">
             <span class="ph-label">Tab Navigation — Contact / Locations Page</span>
           </div>
-        </div>
+        </article>
 
-        <div class="decision-block">
+        <article class="decision-block">
           <div class="decision-num">Decision 03</div>
           <h3>Registration as a Priority CTA</h3>
           <p>Moved registration to the top of both the homepage and Classes page. Three clearly labeled buttons replace plain-text links, reducing friction for the site's most critical task.</p>
@@ -250,15 +254,15 @@
           <div class="img-placeholder img-placeholder-sm img-slot" style="margin-top:1rem;">
             <span class="ph-label">Registration Page — 3 CTA Buttons</span>
           </div>
-        </div>
+        </article>
 
-        <div class="decision-block">
+        <article class="decision-block">
           <div class="decision-num">Decision 04</div>
           <h3>Gallery via Google Drive</h3>
           <p>Each event album shows a 5-photo preview with a "See All Photos" link to the school's Google Drive. The site stays lightweight, and staff can manage photos without developer involvement.</p>
-        </div>
+        </article>
 
-        <div class="decision-block">
+        <article class="decision-block">
           <div class="decision-num">Decision 05</div>
           <h3>Campus Locations with Maps Embed</h3>
           <p>A frequently reported pain point — parents not knowing which campus to go to. Each program tab on the Locations page shows address details alongside an embedded Google Maps preview with a direct link.</p>
@@ -266,9 +270,9 @@
           <div class="img-placeholder img-placeholder-sm img-slot" style="margin-top:1rem;">
             <span class="ph-label">Campus Locations — Maps Integration</span>
           </div>
-        </div>
+        </article>
 
-        <div class="decision-block">
+        <article class="decision-block">
           <div class="decision-num">Decision 06</div>
           <h3>Consistent Visual System</h3>
           <p>Introduced a unified color palette (Navy #023047 + Orange #FB8500 + Teal #219EBC), clear typographic hierarchy, and bilingual content blocks — replacing the previous ad-hoc WordPress theme styling.</p>
@@ -276,14 +280,15 @@
           <div class="img-placeholder img-placeholder-sm img-slot" style="margin-top:1rem;">
             <span class="ph-label">Visual System — Color, Typography, Components</span>
           </div>
-        </div>
+        </article>
 
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- WIREFRAMES -->
-  <div class="section fade-in">
+  <section class="fade-in">
     <div class="section-inner">
       <span class="section-label">Wireframes</span>
       <div class="section-content">
@@ -329,10 +334,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- OUTCOME -->
-  <div class="section fade-in">
+  <section class="fade-in">
     <div class="section-inner">
       <span class="section-label">Outcome</span>
       <div class="section-content">
@@ -376,14 +382,15 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- REFLECTION -->
-  <div class="section fade-in">
+  <section class="fade-in">
     <div class="section-inner">
       <span class="section-label">Reflection</span>
       <div class="section-content">
-        <div class="reflection-box">
+        <aside class="reflection-box">
           <h2>What I learned</h2>
           <p style="margin-top:1rem;">This project reinforced that good UX is as much about structured communication as it is about design. Balancing an outdated CMS, a live site that couldn't go dark during registration season, content arriving in pieces, and a development team working across time zones required clear documentation and pragmatic decisions at every step.</p>
           <p style="margin-top:1rem;">The constraints pushed me to prioritize ruthlessly — every design decision had to justify itself against user needs, not just aesthetic preference.</p>
@@ -391,10 +398,11 @@
             <summary>Next Steps</summary>
             <p>Run usability testing with actual parents focusing on the registration flow and navigation structure against the two original task scenarios.</p>
           </details>
-        </div>
+        </aside>
       </div>
     </div>
-  </div>
+  </section>
+
 
 </main>
 
@@ -403,7 +411,7 @@
   <p>Designed by Huiying Chung · 2026 · <a href="index.html#work" style="color:inherit;">← Back to Portfolio</a></p>
 </footer>
 
-<script src="icc-case-study.js"></script>
-<script src="theme-toggle.js"></script>
+<script src="js/icc-case-study.js"></script>
+<script src="js/theme-toggle.js"></script>
 </body>
 </html>

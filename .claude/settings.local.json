@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -:*)",
+      "Bash(node --version)",
+      "Bash(ls *.html)",
+      "Bash(grep -rn 'href=\\\\|src=' *.html)"
+    ]
+  }
+}

@@ -158,6 +158,7 @@ nav {
 
 /* ─── DIVIDER ────────────────────────────────────────────────────────── */
 .page-divider {
+  border: none;
   height: 1px;
   background: var(--border);
   max-width: 1080px;
@@ -454,6 +455,7 @@ nav {
 
 /* ─── SECTION DIVIDER ────────────────────────────────────────────────── */
 .s-divider {
+  border: none;
   height: 1px;
   background: var(--border);
   margin: 0 0 clamp(60px, 8vw, 96px);

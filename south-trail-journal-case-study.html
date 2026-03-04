@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="shared.css" />
-  <link rel="stylesheet" href="south-trail-journal-case-study.css" />
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/south-trail-journal-case-study.css" />
   <script>
     (function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);else document.documentElement.setAttribute('data-theme','dark');})();
   </script>
@@ -128,22 +128,22 @@
     <div class="process-timeline">
       <div class="process-step reveal">
         <div class="step-dot">01</div>
-        <div class="step-title">Define</div>
+        <h3 class="step-title">Define</h3>
         <p class="step-desc">Established site goals, target audience, and a 6-page sitemap covering Home, Trails, Gallery, News, Contact, and a detail page.</p>
       </div>
       <div class="process-step reveal">
         <div class="step-dot">02</div>
-        <div class="step-title">Design</div>
+        <h3 class="step-title">Design</h3>
         <p class="step-desc">Created low-fidelity wireframes then refined into Figma mockups with a defined color palette, typography, and component patterns.</p>
       </div>
       <div class="process-step reveal">
         <div class="step-dot">03</div>
-        <div class="step-title">Build</div>
+        <h3 class="step-title">Build</h3>
         <p class="step-desc">Implemented HTML/CSS page by page, starting with index.html. Used CSS custom properties and Flexbox/Grid for layout consistency.</p>
       </div>
       <div class="process-step reveal">
         <div class="step-dot">04</div>
-        <div class="step-title">Deploy</div>
+        <h3 class="step-title">Deploy</h3>
         <p class="step-desc">Published to GitHub Pages, debugged image paths, validated HTML with W3C, and integrated Google Analytics for traffic tracking.</p>
       </div>
     </div>
@@ -195,26 +195,26 @@
     </div>
 
     <div class="decisions-grid">
-      <div class="decision-card reveal">
+      <article class="decision-card reveal">
         <span class="decision-icon">🗺</span>
-        <div class="decision-title">Flat, Accessible Navigation</div>
+        <h3 class="decision-title">Flat, Accessible Navigation</h3>
         <p class="decision-text">Kept navigation as a single top bar with 5 direct links — no dropdowns or nested menus. This reduced cognitive load for users who arrive with a specific page in mind (e.g., finding a trail), and made responsive design simpler: the menu collapses cleanly on mobile.</p>
-      </div>
-      <div class="decision-card reveal">
+      </article>
+      <article class="decision-card reveal">
         <span class="decision-icon">📐</span>
-        <div class="decision-title">CSS Custom Properties System</div>
+        <h3 class="decision-title">CSS Custom Properties System</h3>
         <p class="decision-text">All colors and key spacing values were defined as CSS variables in <code style="font-family: 'DM Mono', monospace; font-size: 0.85em; background: rgba(107,63,160,0.12); color: var(--purple-xl); padding: 0.1em 0.4em; border-radius: 3px;">:root</code>, shared across pages via a single linked stylesheet. This ensured visual consistency without duplicating declarations, and made future updates a single-line change.</p>
-      </div>
-      <div class="decision-card reveal">
+      </article>
+      <article class="decision-card reveal">
         <span class="decision-icon">📱</span>
-        <div class="decision-title">Mobile-First Responsive Layout</div>
+        <h3 class="decision-title">Mobile-First Responsive Layout</h3>
         <p class="decision-text">Base styles were written for mobile, then progressively enhanced for tablet and desktop using CSS Grid and Flexbox breakpoints. The gallery page in particular required careful grid adjustment — shifting from 1 column on small screens to a 5-column masonry-style layout on desktop.</p>
-      </div>
-      <div class="decision-card reveal">
+      </article>
+      <article class="decision-card reveal">
         <span class="decision-icon">🔍</span>
-        <div class="decision-title">SEO Meta Tags Per Page</div>
+        <h3 class="decision-title">SEO Meta Tags Per Page</h3>
         <p class="decision-text">Rather than reusing the same generic description, each page received a unique <code style="font-family: 'DM Mono', monospace; font-size: 0.85em; background: rgba(107,63,160,0.12); color: var(--purple-xl); padding: 0.1em 0.4em; border-radius: 3px;">meta description</code> and relevant keywords tailored to that page's content. This was one of the more satisfying course discoveries — understanding how page metadata connects design intent to search visibility.</p>
-      </div>
+      </article>
     </div>
   </section>
 
@@ -226,39 +226,39 @@
       <p class="section-body">Every project has friction. Here are the three most significant technical challenges I faced and what I did to resolve each.</p>
     </div>
     <div class="challenges-list">
-      <div class="challenge-item reveal">
-        <div class="challenge-num">01</div>
+      <article class="challenge-item reveal">
+        <span class="challenge-num">01</span>
         <div>
-          <div class="challenge-title">W3C Validation Failures</div>
+          <h3 class="challenge-title">W3C Validation Failures</h3>
           <p class="challenge-desc">My initial HTML failed the W3C validator due to incorrect nesting — particularly around <code style="font-family:'DM Mono',monospace;font-size:0.85em;background:rgba(107,63,160,0.12);color:var(--purple-xl);padding:0.1em 0.4em;border-radius:3px;">&lt;iframe&gt;</code> elements embedded inside <code style="font-family:'DM Mono',monospace;font-size:0.85em;background:rgba(107,63,160,0.12);color:var(--purple-xl);padding:0.1em 0.4em;border-radius:3px;">&lt;section&gt;</code> and <code style="font-family:'DM Mono',monospace;font-size:0.85em;background:rgba(107,63,160,0.12);color:var(--purple-xl);padding:0.1em 0.4em;border-radius:3px;">&lt;article&gt;</code> tags. The error messages were dense and hard to interpret at first.</p>
         </div>
-        <div class="challenge-solution">
+        <aside class="challenge-solution">
           <span class="solution-label">Solution</span>
           <p class="solution-text">Used the W3C validator output line-by-line and cross-referenced HTML spec documentation to understand which block elements cannot nest inside which parents. Restructured the semantic markup from the outside in, fixing the containment hierarchy before worrying about styles.</p>
-        </div>
-      </div>
-      <div class="challenge-item reveal">
-        <div class="challenge-num">02</div>
+        </aside>
+      </article>
+      <article class="challenge-item reveal">
+        <span class="challenge-num">02</span>
         <div>
-          <div class="challenge-title">Broken Images After GitHub Pages Deploy</div>
+          <h3 class="challenge-title">Broken Images After GitHub Pages Deploy</h3>
           <p class="challenge-desc">Locally, all images rendered correctly. After pushing to GitHub Pages, a significant number of images disappeared — the result of case-sensitive file path differences between Windows and Linux file systems.</p>
         </div>
-        <div class="challenge-solution">
+        <aside class="challenge-solution">
           <span class="solution-label">Solution</span>
           <p class="solution-text">Audited every <code style="font-family:'DM Mono',monospace;font-size:0.85em;background:rgba(107,63,160,0.12);color:var(--purple-xl);padding:0.1em 0.4em;border-radius:3px;">src</code> attribute against the actual filenames in the repository, correcting case mismatches (e.g., <code style="font-family:'DM Mono',monospace;font-size:0.85em;background:rgba(107,63,160,0.12);color:var(--purple-xl);padding:0.1em 0.4em;border-radius:3px;">Trail.jpg</code> → <code style="font-family:'DM Mono',monospace;font-size:0.85em;background:rgba(107,63,160,0.12);color:var(--purple-xl);padding:0.1em 0.4em;border-radius:3px;">trail.jpg</code>). Going forward, I adopted a consistent lowercase-with-hyphens naming convention for all assets.</p>
-        </div>
-      </div>
-      <div class="challenge-item reveal">
-        <div class="challenge-num">03</div>
+        </aside>
+      </article>
+      <article class="challenge-item reveal">
+        <span class="challenge-num">03</span>
         <div>
-          <div class="challenge-title">Responsive Layout: Spacing &amp; Alignment</div>
+          <h3 class="challenge-title">Responsive Layout: Spacing &amp; Alignment</h3>
           <p class="challenge-desc">Several sections — particularly the card grid on the homepage and the trail comparison table — broke unpredictably at certain viewport widths. Elements overlapped or collapsed in unexpected ways that didn't appear in the desktop preview.</p>
         </div>
-        <div class="challenge-solution">
+        <aside class="challenge-solution">
           <span class="solution-label">Solution</span>
           <p class="solution-text">Adopted a systematic approach: open DevTools, drag the viewport width slowly from 320px upward, and note exactly where breakage occurs. Then write targeted breakpoints only for those specific widths rather than using arbitrary standard breakpoints. This produced cleaner, more intentional responsive behavior.</p>
-        </div>
-      </div>
+        </aside>
+      </article>
     </div>
   </section>
 
@@ -270,10 +270,10 @@
       <p class="section-body">Each page was designed to serve a distinct user need while sharing the same navigation, footer, color system, and typographic rhythm.</p>
     </div>
     <div class="pages-grid">
-      <div class="page-card reveal">
+      <article class="page-card reveal">
         <div class="page-card-thumb thumb-home">🏔</div>
         <div class="page-card-body">
-          <div class="page-card-name">Home</div>
+          <h3 class="page-card-name">Home</h3>
           <p style="font-size:0.82rem; color: var(--stone);">Hero slideshow, featured trail cards, testimonials section, and footer with email link.</p>
           <div class="page-features">
             <span class="feature-tag">hero image</span>
@@ -281,22 +281,22 @@
             <span class="feature-tag">email link</span>
           </div>
         </div>
-      </div>
-      <div class="page-card reveal">
+      </article>
+      <article class="page-card reveal">
         <div class="page-card-thumb thumb-trails">🧭</div>
         <div class="page-card-body">
-          <div class="page-card-name">Trails</div>
+          <h3 class="page-card-name">Trails</h3>
           <p style="font-size:0.82rem; color: var(--stone);">Trail comparison table with difficulty ratings, distances, and highlights for 10 trails.</p>
           <div class="page-features">
             <span class="feature-tag">HTML table</span>
             <span class="feature-tag">comparison</span>
           </div>
         </div>
-      </div>
-      <div class="page-card reveal">
+      </article>
+      <article class="page-card reveal">
         <div class="page-card-thumb thumb-gallery">📷</div>
         <div class="page-card-body">
-          <div class="page-card-name">Gallery</div>
+          <h3 class="page-card-name">Gallery</h3>
           <p style="font-size:0.82rem; color: var(--stone);">Photo grid of 20+ self-shot trail photos plus an embedded YouTube video highlight reel.</p>
           <div class="page-features">
             <span class="feature-tag">photo grid</span>
@@ -304,22 +304,22 @@
             <span class="feature-tag">external links</span>
           </div>
         </div>
-      </div>
-      <div class="page-card reveal">
+      </article>
+      <article class="page-card reveal">
         <div class="page-card-thumb thumb-news">📰</div>
         <div class="page-card-body">
-          <div class="page-card-name">News</div>
+          <h3 class="page-card-name">News</h3>
           <p style="font-size:0.82rem; color: var(--stone);">Trail closures, policy updates, and hiking news with 10+ sourced external links.</p>
           <div class="page-features">
             <span class="feature-tag">external links ×10</span>
             <span class="feature-tag">news list</span>
           </div>
         </div>
-      </div>
-      <div class="page-card reveal">
+      </article>
+      <article class="page-card reveal">
         <div class="page-card-thumb thumb-contact">✉️</div>
         <div class="page-card-body">
-          <div class="page-card-name">Contact</div>
+          <h3 class="page-card-name">Contact</h3>
           <p style="font-size:0.82rem; color: var(--stone);">6-field contact form with file upload, consent checkbox, and accessible field labels.</p>
           <div class="page-features">
             <span class="feature-tag">HTML form</span>
@@ -327,11 +327,11 @@
             <span class="feature-tag">checkbox</span>
           </div>
         </div>
-      </div>
-      <div class="page-card reveal">
+      </article>
+      <article class="page-card reveal">
         <div class="page-card-thumb thumb-trail-detail">⛰</div>
         <div class="page-card-body">
-          <div class="page-card-name">Old Baldy Trail</div>
+          <h3 class="page-card-name">Old Baldy Trail</h3>
           <p style="font-size:0.82rem; color: var(--stone);">Detailed trail guide with personal narrative, tips list, embedded video, and Garner State Park context.</p>
           <div class="page-features">
             <span class="feature-tag">long-form content</span>
@@ -339,7 +339,7 @@
             <span class="feature-tag">tips list</span>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
@@ -351,8 +351,8 @@
       <p class="section-body">Looking back at this project with fresh eyes, here's what I learned and what I'd approach differently next time.</p>
     </div>
     <div class="reflection-grid">
-      <div class="reflection-card learned reveal">
-        <div class="rc-title">✦ What I Learned</div>
+      <article class="reflection-card learned reveal">
+        <h3 class="rc-title">✦ What I Learned</h3>
         <ul class="rc-list">
           <li>HTML structure decisions at the start save hours of refactoring later</li>
           <li>CSS custom properties are the simplest way to maintain visual consistency across multiple pages</li>
@@ -360,9 +360,9 @@
           <li>SEO meta tags are not an afterthought; they're part of the content design</li>
           <li>Responsive design is best tested by slowly resizing, not just at preset breakpoints</li>
         </ul>
-      </div>
-      <div class="reflection-card next reveal">
-        <div class="rc-title">→ What I'd Do Differently</div>
+      </article>
+      <article class="reflection-card next reveal">
+        <h3 class="rc-title">→ What I'd Do Differently</h3>
         <ul class="rc-list">
           <li>Plan layout structure in Figma before writing a single line of HTML</li>
           <li>Add JavaScript for the search bar and interactive filtering features I had to cut</li>
@@ -370,12 +370,12 @@
           <li>Test on real devices, not just browser DevTools responsive mode</li>
           <li>Start Google Analytics earlier to gather more meaningful data before submission</li>
         </ul>
-      </div>
+      </article>
     </div>
   </section>
 
   <!-- CTA -->
-  <div class="cta-section">
+  <section class="cta-section">
     <h2 class="cta-title">Ready to explore <span>the trail?</span></h2>
     <p class="cta-sub">View the live site or browse other projects in my portfolio.</p>
     <div class="cta-btns">
@@ -383,7 +383,7 @@
       <a href="https://github.com/HuiYingChung/south_trail_journal" target="_blank" class="btn btn-outline">⌥ GitHub Repo</a>
       <a href="index.html#work" class="btn btn-outline">← Back to Portfolio</a>
     </div>
-  </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
@@ -391,7 +391,7 @@
     <a href="https://huiyingchung.github.io/south_trail_journal/" target="_blank" class="footer-link">↗ south_trail_journal</a>
   </footer>
 
-  <script src="south-trail-journal-case-study.js"></script>
-  <script src="theme-toggle.js"></script>
+  <script src="js/south-trail-journal-case-study.js"></script>
+  <script src="js/theme-toggle.js"></script>
 </body>
 </html>

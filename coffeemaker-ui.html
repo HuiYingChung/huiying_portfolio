@@ -6,8 +6,8 @@
   <title>Case Study — KitchenAid Espresso Machine Redesign</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="shared.css" />
-  <link rel="stylesheet" href="coffeemaker-ui.css" />
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/coffeemaker-ui.css" />
   <script>
     (function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
   </script>
@@ -91,7 +91,7 @@
 
     <!-- Problem -->
     <section class="fade-in">
-      <div class="section-eyebrow">01 — Problem</div>
+      <p class="section-eyebrow">01 — Problem</p>
       <h2>Four Layers of Usability Failure</h2>
       <p>
         Through daily use and systematic analysis, I identified four interconnected issues
@@ -99,37 +99,37 @@
       </p>
 
       <div class="problem-grid">
-        <div class="problem-card">
+        <article class="problem-card">
           <span class="problem-icon">🎭</span>
           <h3>Unclear Signifiers</h3>
           <p>The metallic horizontal bars that serve as buttons look like decorative trim. No visual cue communicates "press here." Icons above the bars — cup, steam, water droplet, "1" and "2" — have no text labels.</p>
-        </div>
-        <div class="problem-card">
+        </article>
+        <article class="problem-card">
           <span class="problem-icon">🔆</span>
           <h3>Inconsistent Feedback</h3>
           <p>A blinking LED means "preheating" in one context but "phase complete, press to continue" in cleaning mode. The same signal carries different meanings with no differentiation.</p>
-        </div>
-        <div class="problem-card">
+        </article>
+        <article class="problem-card">
           <span class="problem-icon">🗺️</span>
           <h3>Broken Mental Model</h3>
           <p>The button layout doesn't reflect the natural coffee-making sequence: grind → fill portafilter → power on → preheat → select strength → extract → steam. The interface creates cognitive mismatch.</p>
-        </div>
-        <div class="problem-card">
+        </article>
+        <article class="problem-card">
           <span class="problem-icon">🚫</span>
           <h3>Hidden Interactions</h3>
           <p>Temperature adjustment requires a long-press with zero indication on the interface itself. There are no error states for low water, no warning before the machine becomes unusable.</p>
-        </div>
+        </article>
       </div>
 
-      <div class="quote-block" style="margin-top: 2rem;">
+      <blockquote class="quote-block" style="margin-top: 2rem;">
         <p>"They needed a way to designate which parts could be touched, slid upward, downward, or sideways, or tapped upon."</p>
-        <div class="quote-source">— Donald Norman, The Design of Everyday Things (2013), p. 34</div>
-      </div>
+        <cite class="quote-source">— Donald Norman, The Design of Everyday Things (2013), p. 34</cite>
+      </blockquote>
     </section>
 
     <!-- Process -->
     <section class="fade-in">
-      <div class="section-eyebrow">02 — Process</div>
+      <p class="section-eyebrow">02 — Process</p>
       <h2>Applying Norman's Framework Systematically</h2>
       <p>
         Rather than listing problems intuitively, I structured the analysis around six
@@ -137,39 +137,39 @@
         UX theory:
       </p>
 
-      <div class="principle-compact">
+      <dl class="principle-compact">
         <div class="pc-row">
-          <span class="pc-name">Signifiers</span>
-          <span class="pc-desc">Flat bars look purely decorative — zero visual affordance for pressing without reading the manual first.</span>
+          <dt class="pc-name">Signifiers</dt>
+          <dd class="pc-desc">Flat bars look purely decorative — zero visual affordance for pressing without reading the manual first.</dd>
         </div>
         <div class="pc-row">
-          <span class="pc-name">Affordances</span>
-          <span class="pc-desc">No tactile cue invites physical interaction; the bars feel like trim, not controls.</span>
+          <dt class="pc-name">Affordances</dt>
+          <dd class="pc-desc">No tactile cue invites physical interaction; the bars feel like trim, not controls.</dd>
         </div>
         <div class="pc-row">
-          <span class="pc-name">Feedback</span>
-          <span class="pc-desc">Same LED blink carries different meanings across brewing and cleaning contexts.</span>
+          <dt class="pc-name">Feedback</dt>
+          <dd class="pc-desc">Same LED blink carries different meanings across brewing and cleaning contexts.</dd>
         </div>
         <div class="pc-row">
-          <span class="pc-name">Mapping</span>
-          <span class="pc-desc">Button placement ignores the natural coffee-making sequence — users can't intuit order from position.</span>
+          <dt class="pc-name">Mapping</dt>
+          <dd class="pc-desc">Button placement ignores the natural coffee-making sequence — users can't intuit order from position.</dd>
         </div>
         <div class="pc-row">
-          <span class="pc-name">Conceptual Model</span>
-          <span class="pc-desc">Interface fails to represent the user's mental workflow; the gap causes systematic, repeatable errors.</span>
+          <dt class="pc-name">Conceptual Model</dt>
+          <dd class="pc-desc">Interface fails to represent the user's mental workflow; the gap causes systematic, repeatable errors.</dd>
         </div>
         <div class="pc-row">
-          <span class="pc-name">Constraints</span>
-          <span class="pc-desc">No error prevention for low water or improperly installed portafilter — dangerous states pass silently.</span>
+          <dt class="pc-name">Constraints</dt>
+          <dd class="pc-desc">No error prevention for low water or improperly installed portafilter — dangerous states pass silently.</dd>
         </div>
-      </div>
+      </dl>
 
 
     </section>
 
     <!-- Redesign -->
     <section class="fade-in">
-      <div class="section-eyebrow">03 — Redesign</div>
+      <p class="section-eyebrow">03 — Redesign</p>
       <h2>Solving Problems Without Losing Minimal Aesthetics</h2>
       <p>
         The redesign goal was specific: <strong>fix the interaction model, not the visual identity</strong>.
@@ -222,7 +222,7 @@
 
     <!-- Outcomes -->
     <section class="fade-in">
-      <div class="section-eyebrow">04 — Outcomes</div>
+      <p class="section-eyebrow">04 — Outcomes</p>
       <h2>What Changed and Why It Matters</h2>
 
       <div class="stat-strip">
@@ -240,39 +240,39 @@
         </div>
       </div>
 
-      <div class="outcome-list">
-        <div class="outcome-item">
-          <div class="outcome-num">01</div>
-          <div class="outcome-text">
+      <ol class="outcome-list">
+        <li class="outcome-item">
+          <span class="outcome-num">01</span>
+          <p class="outcome-text">
             <strong>Discoverability without a manual.</strong> Text labels alongside icons mean a first-time user can identify every control without any reference material.
-          </div>
-        </div>
-        <div class="outcome-item">
-          <div class="outcome-num">02</div>
-          <div class="outcome-text">
+          </p>
+        </li>
+        <li class="outcome-item">
+          <span class="outcome-num">02</span>
+          <p class="outcome-text">
             <strong>Unambiguous system status.</strong> Consistent LED semantics (blinking = active process only) combined with distinct audio tones eliminate the feedback guessing game.
-          </div>
-        </div>
-        <div class="outcome-item">
-          <div class="outcome-num">03</div>
-          <div class="outcome-text">
+          </p>
+        </li>
+        <li class="outcome-item">
+          <span class="outcome-num">03</span>
+          <p class="outcome-text">
             <strong>Error prevention over error recovery.</strong> The low-water lock prevents users from starting a brew that will fail mid-extraction — a common frustration point.
-          </div>
-        </div>
-        <div class="outcome-item">
-          <div class="outcome-num">04</div>
-          <div class="outcome-text">
+          </p>
+        </li>
+        <li class="outcome-item">
+          <span class="outcome-num">04</span>
+          <p class="outcome-text">
             <strong>Workflow-aligned layout.</strong> Button sequence mirrors the cognitive model of making coffee, reducing the mental effort required to operate the machine correctly.
-          </div>
-        </div>
-      </div>
+          </p>
+        </li>
+      </ol>
     </section>
 
     <!-- Reflection -->
     <section class="fade-in">
-      <div class="section-eyebrow">05 — Reflection</div>
+      <p class="section-eyebrow">05 — Reflection</p>
       <h2>What I Learned</h2>
-      <div class="reflection-box">
+      <aside class="reflection-box">
         <p>
           This project made me think differently about the relationship between aesthetics
           and usability. The KitchenAid machine isn't a bad design — it's an incomplete one.
@@ -291,7 +291,7 @@
           made the analysis significantly more persuasive than abstract description alone.
           Show, don't just tell — even in written analysis.
         </p>
-      </div>
+      </aside>
     </section>
 
     <hr class="divider" />
@@ -311,7 +311,7 @@
 
   <footer>Huiying Chung · UX/UI + Front-End Portfolio · 2026</footer>
 
-  <script src="coffeemaker-ui.js"></script>
-  <script src="theme-toggle.js"></script>
+  <script src="js/coffeemaker-ui.js"></script>
+  <script src="js/theme-toggle.js"></script>
 </body>
 </html>

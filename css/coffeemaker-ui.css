@@ -194,6 +194,7 @@ strong { color: var(--text); font-weight: 600; }
 /* ── Outcome chips ── */
 .outcome-list {
   display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;
+  list-style: none; padding: 0;
 }
 .outcome-item {
   display: flex; align-items: flex-start; gap: 1rem;

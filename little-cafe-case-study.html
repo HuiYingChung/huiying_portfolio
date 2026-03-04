@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="shared.css" />
-  <link rel="stylesheet" href="little-cafe-case-study.css" />
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/little-cafe-case-study.css" />
 </head>
 <body>
 
@@ -54,7 +54,7 @@
     </div>
   </header>
 
-  <div class="page-divider"></div>
+  <hr class="page-divider" />
 
   <!-- TL;DR -->
   <div class="reveal" style="max-width:1080px;margin:clamp(48px,7vw,80px) auto 0;padding:0 clamp(24px,8vw,120px);">
@@ -94,7 +94,7 @@
     </div>
   </div>
 
-  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+  <hr class="s-divider" />
 
   <!-- 02 CONCEPT -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
@@ -104,9 +104,9 @@
       <p>The cost calculator requirement aligned perfectly with the mental model of a quick-service morning stop: pick a couple of items, see the total update instantly, check out. I wanted to build something that felt genuinely real — not a generic template exercise.</p>
       <p>I deliberately chose a <strong>small, curated menu</strong> rather than a large catalog. The constraint strengthened the design: a focused shop section that matched the cafe's intimate, boutique identity.</p>
 
-      <div class="callout">
+      <blockquote class="callout">
         <p>The fixed 1280px layout also influenced the shop structure. Two columns — products on the left, cart always visible on the right — <strong>mimics holding a physical menu while watching your order tally up like a receipt.</strong></p>
-      </div>
+      </blockquote>
 
       <h3>Design System</h3>
       <div class="swatch-row">
@@ -143,7 +143,7 @@
     </div>
   </section>
 
-  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+  <hr class="s-divider" />
 
   <!-- 03 PROCESS -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
@@ -199,7 +199,7 @@
     </div>
   </section>
 
-  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+  <hr class="s-divider" />
 
   <!-- 04 MOBILE UX DECISION -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
@@ -228,13 +228,13 @@
 
       <p>This pattern mirrors what users already know from mobile ordering apps. The anchor jump is a deliberate, practical choice: straightforward to implement, and meaningfully better than offering no shortcut at all.</p>
 
-      <div class="callout">
+      <blockquote class="callout">
         <p><strong>Thinking ahead:</strong> A slide-up drawer would eliminate the back-and-forth of jumping to the cart and scrolling back up to keep ordering. That's the logical next iteration — but for this project, the anchor jump solved the core problem cleanly.</p>
-      </div>
+      </blockquote>
     </div>
   </section>
 
-  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+  <hr class="s-divider" />
 
   <!-- 05 AI DISCLOSURE -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
@@ -257,7 +257,7 @@
     </div>
   </section>
 
-  <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
+  <hr class="s-divider" />
 
   <!-- 06 REFLECTION -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
@@ -283,7 +283,7 @@
   </section>
 
   <!-- CTA -->
-  <div class="cta-section reveal">
+  <section class="cta-section reveal">
     <div class="cta-inner">
       <h2>See it live.</h2>
       <p>The full site and Behance process documentation are publicly available.</p>
@@ -303,7 +303,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
@@ -311,6 +311,6 @@
     <a href="index.html#work">← Back to portfolio</a>
   </footer>
 
-  <script src="little-cafe-case-study.js" defer></script>
+  <script src="js/little-cafe-case-study.js" defer></script>
 </body>
 </html>
