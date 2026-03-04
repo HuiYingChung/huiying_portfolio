@@ -28,3 +28,12 @@ function applyLight() {
   icon.textContent  = '🌙';
   label.textContent = 'Dark';
 }
+
+// Back to Top
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  backToTop.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

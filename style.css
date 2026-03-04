@@ -432,6 +432,41 @@ footer { border-top: 1px solid var(--border); padding: var(--space-md) 0; }
 .footer-note  { font-size: 0.78rem; color: var(--text-muted); font-style: italic; }
 
 /* ════════════════════════════════════════════════════════════
+   BACK TO TOP
+════════════════════════════════════════════════════════════ */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 90;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  color: var(--text-muted);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s, border-color 0.2s, color 0.2s;
+}
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.back-to-top svg { width: 16px; height: 16px; }
+
+/* ════════════════════════════════════════════════════════════
    RESPONSIVE
 ════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
