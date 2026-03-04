@@ -144,6 +144,20 @@ nav {
   .tldr-item:last-child { border-bottom: none; }
 }
 
+/* ── Footer (shared across case studies) ── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+footer a:hover { opacity: 0.7; }
+
 /* ── Deep Dive expandable (shared across case studies) ── */
 .deep-dive {
   margin-top: 1rem;

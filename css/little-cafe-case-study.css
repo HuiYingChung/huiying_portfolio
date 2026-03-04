@@ -53,12 +53,6 @@ body {
   transition: background var(--transition), color var(--transition);
 }
 
-/* ─── ANIMATIONS ─────────────────────────────────────────────────────── */
-@keyframes lineGrow {
-  from { transform: scaleX(0); }
-  to   { transform: scaleX(1); }
-}
-
 /* ─── NAV ────────────────────────────────────────────────────────────── */
 /* structural + font styles in shared.css; only page-specific overrides here */
 nav {
@@ -72,7 +66,6 @@ nav {
   opacity: 0.85;
 }
 .nav-logo span { color: var(--accent-light); }
-
 
 .theme-btn {
   width: 36px; height: 36px;
@@ -90,10 +83,6 @@ nav {
   border-color: var(--accent-border);
 }
 .theme-btn svg { width: 15px; height: 15px; }
-[data-theme="dark"]  .icon-sun  { display: block; }
-[data-theme="dark"]  .icon-moon { display: none; }
-[data-theme="light"] .icon-sun  { display: none; }
-[data-theme="light"] .icon-moon { display: block; }
 
 /* ─── HERO ───────────────────────────────────────────────────────────── */
 .hero {
@@ -538,25 +527,3 @@ nav {
 }
 .btn svg { width: 14px; height: 14px; }
 
-/* ─── PAGE FOOTER ─────────────────────────────────────────────────────── */
-footer {
-  border-top: 1px solid var(--border);
-  padding: 28px clamp(24px, 8vw, 120px);
-  max-width: 1080px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-footer p {
-  font-size: 12px;
-  color: var(--text-muted);
-}
-footer a {
-  font-size: 12px;
-  color: var(--text-muted);
-  transition: color var(--transition);
-}
-footer a:hover { color: var(--accent-light); }

@@ -37,9 +37,6 @@ body {
 }
 
 /* ── NAV ── (visual styles in shared.css) ── */
-.nav-logo {
-  color: var(--ink);
-}
 
 /* ── HERO ── */
 .hero {
@@ -268,14 +265,6 @@ p { color: var(--ink2); font-weight: 300; margin-bottom: 1rem; }
   text-align: center; font-style: italic;
 }
 
-/* ── FOOTER ── */
-footer {
-  padding: 3rem 4rem; text-align: center;
-  border-top: 1px solid var(--border);
-  font-size: 0.8rem; color: var(--ink3);
-}
-
-/* ── ANIMATIONS ── */
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
