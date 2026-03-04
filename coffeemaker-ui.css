@@ -11,6 +11,20 @@
   --border: rgba(107, 63, 160, 0.15);
   --shadow: 0 2px 20px rgba(107, 63, 160, 0.08);
   --shadow-hover: 0 8px 40px rgba(107, 63, 160, 0.18);
+  --nav-bg: rgba(244, 243, 247, 0.85);
+}
+
+[data-theme="dark"] {
+  --bg: #100E16;
+  --bg-card: #1C1828;
+  --bg-card2: #221E30;
+  --text: #EDE9F5;
+  --text-muted: #A89DBF;
+  --text-light: #5C5474;
+  --border: rgba(107, 63, 160, 0.25);
+  --shadow: 0 2px 20px rgba(0,0,0,0.3);
+  --shadow-hover: 0 8px 40px rgba(107, 63, 160, 0.25);
+  --nav-bg: rgba(16, 14, 22, 0.92);
 }
 
 body {
@@ -21,7 +35,7 @@ body {
 /* ── Nav ── */
 nav {
   padding: 1.2rem 2.5rem;
-  background: rgba(244, 243, 247, 0.85);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
 }
 .nav-back {

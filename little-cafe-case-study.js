@@ -3,13 +3,13 @@
 // Theme toggle
 const root = document.documentElement;
 const btn  = document.getElementById('themeToggle');
-const saved = localStorage.getItem('hui-theme') || 'dark';
+const saved = localStorage.getItem('theme') || 'dark';
 root.setAttribute('data-theme', saved);
 
 btn.addEventListener('click', () => {
   const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   root.setAttribute('data-theme', next);
-  localStorage.setItem('hui-theme', next);
+  localStorage.setItem('theme', next);
 });
 
 // Scroll reveal

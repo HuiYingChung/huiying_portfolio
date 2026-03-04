@@ -10,6 +10,22 @@
   --text:     #e8e4f0;
   --muted:    #8a84a0;
   --dim:      #3d3858;
+  --nav-bg:   rgba(15, 14, 20, 0.85);
+}
+
+[data-theme="light"] {
+  --bg:       #F6F5F2;
+  --bg-2:     #EEECEA;
+  --bg-3:     #E5E2DC;
+  --surface:  #FFFFFF;
+  --border:   rgba(107, 63, 160, 0.12);
+  --purple:   #6B3FA0;
+  --purple-l: #8b5fc7;
+  --purple-xl:#6B3FA0;
+  --text:     #1A1520;
+  --muted:    #5C5878;
+  --dim:      #B0ACBF;
+  --nav-bg:   rgba(246, 245, 242, 0.92);
 }
 
 body {
@@ -22,7 +38,7 @@ body {
 /* ── NAV ── */
 nav {
   padding: 1.25rem 3rem;
-  background: rgba(15,14,20,0.85);
+  background: var(--nav-bg);
   backdrop-filter: blur(16px);
 }
 .nav-logo {

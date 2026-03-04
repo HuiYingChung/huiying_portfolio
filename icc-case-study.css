@@ -11,6 +11,19 @@
   --border: #DDDBD7;
   --white: #FFFFFF;
   --placeholder-bg: #E8E6E1;
+  --nav-bg: rgba(247, 246, 243, 0.88);
+}
+
+[data-theme="dark"] {
+  --bg: #13120F;
+  --bg2: #1C1A17;
+  --ink: #F0EDE8;
+  --ink2: #B8B3A8;
+  --ink3: #706860;
+  --border: #2A2720;
+  --white: #1C1915;
+  --placeholder-bg: #222018;
+  --nav-bg: rgba(19, 18, 15, 0.92);
 }
 
 body {
@@ -21,7 +34,7 @@ body {
 /* ── NAV ── */
 nav {
   padding: 1.2rem 4rem;
-  background: rgba(247,246,243,0.88);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
 }
 .nav-logo {

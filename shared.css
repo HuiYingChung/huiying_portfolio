@@ -12,6 +12,7 @@ body {
   font-family: 'Figtree', sans-serif;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  transition: background 0.3s, color 0.3s;
 }
 
 img { display: block; max-width: 100%; }
@@ -61,3 +62,30 @@ nav {
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── Theme toggle button ── */
+.theme-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted, #6A6478);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.2s, color 0.2s;
+}
+.theme-btn:hover { border-color: var(--accent, #6B3FA0); color: var(--text, #18161F); }
+.theme-btn svg { width: 14px; height: 14px; fill: currentColor; }
+
+/* Show moon in light mode, sun in dark mode */
+.theme-btn .icon-sun  { display: none; }
+.theme-btn .icon-moon { display: block; }
+[data-theme="dark"]  .theme-btn .icon-sun  { display: block; }
+[data-theme="dark"]  .theme-btn .icon-moon { display: none; }
+/* South Trail defaults to dark, so light mode shows moon */
+[data-theme="light"] .theme-btn .icon-sun  { display: none; }
+[data-theme="light"] .theme-btn .icon-moon { display: block; }
