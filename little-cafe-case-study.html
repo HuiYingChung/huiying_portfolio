@@ -98,7 +98,7 @@
 
   <!-- 02 CONCEPT -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
-    <div class="section-label">Concept</div>
+    <p class="section-label">Concept</p>
     <div class="section-body">
       <h2>What the requirements inspired.</h2>
       <p>The cost calculator requirement aligned perfectly with the mental model of a quick-service morning stop: pick a couple of items, see the total update instantly, check out. I wanted to build something that felt genuinely real — not a generic template exercise.</p>
@@ -147,55 +147,55 @@
 
   <!-- 03 PROCESS -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
-    <div class="section-label">Process</div>
+    <p class="section-label">Process</p>
     <div class="section-body">
       <h2>From wireframe to working code.</h2>
       <p>I built the site in deliberate phases, resolving each layer of complexity before moving to the next.</p>
 
-      <div class="phase-list">
-        <div class="phase-item">
-          <div class="phase-num">01</div>
+      <ol class="phase-list">
+        <li class="phase-item">
+          <span class="phase-num">01</span>
           <div class="phase-content">
             <h4>Discovery & Content Planning</h4>
             <p>Defined the shop concept, product lineup, brand voice, and full information architecture before writing any code. Created a content inventory of all six items with names, descriptions, and pricing.</p>
           </div>
-        </div>
-        <div class="phase-item">
-          <div class="phase-num">02</div>
+        </li>
+        <li class="phase-item">
+          <span class="phase-num">02</span>
           <div class="phase-content">
             <h4>Visual Design</h4>
             <p>Established the Sage Green + Warm Orange color system as CSS custom properties, enabling the dark/light mode toggle as a single class swap on body.dark-mode. Locked in type choices and spacing tokens.</p>
           </div>
-        </div>
-        <div class="phase-item">
-          <div class="phase-num">03</div>
+        </li>
+        <li class="phase-item">
+          <span class="phase-num">03</span>
           <div class="phase-content">
             <h4>Wireframing (Figma)</h4>
             <p>Built low-fidelity wireframes before touching code. The most critical decision: two-column shop layout with sticky cart sidebar, confirmed to keep the order total always visible — reducing checkout friction.</p>
           </div>
-        </div>
-        <div class="phase-item">
-          <div class="phase-num">04</div>
+        </li>
+        <li class="phase-item">
+          <span class="phase-num">04</span>
           <div class="phase-content">
             <h4>The "Zero Div" Challenge</h4>
             <p>Challenged myself to write semantic HTML with almost zero div tags — using &lt;section&gt;, &lt;article&gt;, &lt;hgroup&gt;, &lt;aside&gt;, &lt;figure&gt; throughout. This improved accessibility and made JS selection predictable.</p>
           </div>
-        </div>
-        <div class="phase-item">
-          <div class="phase-num">05</div>
+        </li>
+        <li class="phase-item">
+          <span class="phase-num">05</span>
           <div class="phase-content">
             <h4>JavaScript</h4>
             <p>Cart logic (add/remove/re-render), real-time total with 8% tax, hero fade carousel, contact form with conditional regex validation, customer object creation on submit, and localStorage theme persistence.</p>
           </div>
-        </div>
-        <div class="phase-item">
-          <div class="phase-num">06</div>
+        </li>
+        <li class="phase-item">
+          <span class="phase-num">06</span>
           <div class="phase-content">
             <h4>Responsive Design & Mobile UX</h4>
             <p>Rebuilt the layout for mobile — and identified a new problem in the process. See the next section.</p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -203,24 +203,24 @@
 
   <!-- 04 MOBILE UX DECISION -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
-    <div class="section-label">UX Decision</div>
+    <p class="section-label">UX Decision</p>
     <div class="section-body">
       <h2>The mobile cart problem — and how I solved it.</h2>
       <p>The two-column desktop layout works because both panels are always visible. On mobile, that collapses to a single column — and the cart gets pushed below the entire product list. A user could add items and have <strong>no feedback about where their order is</strong>, or how to check out without scrolling to the bottom.</p>
 
       <div class="card-grid">
         <div class="card">
-          <div class="card-icon">🧾</div>
+          <span class="card-icon">🧾</span>
           <h4>Fixed cart icon</h4>
           <p>Stays anchored in the corner at all times — always reachable, regardless of scroll position.</p>
         </div>
         <div class="card">
-          <div class="card-icon">🔢</div>
+          <span class="card-icon">🔢</span>
           <h4>Live badge counter</h4>
           <p>Updates every time an item is added or removed, giving instant visual confirmation of cart state.</p>
         </div>
         <div class="card">
-          <div class="card-icon">⚡</div>
+          <span class="card-icon">⚡</span>
           <h4>Anchor jump to cart</h4>
           <p>Tapping the icon jumps to the Your Order section — no scrolling, direct path to checkout.</p>
         </div>
@@ -238,7 +238,7 @@
 
   <!-- 05 AI DISCLOSURE -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
-    <div class="section-label">Process Note</div>
+    <p class="section-label">Process Note</p>
     <div class="section-body">
       <details class="deep-dive">
         <summary>Working with AI — openly ↓</summary>
@@ -261,7 +261,7 @@
 
   <!-- 06 REFLECTION -->
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
-    <div class="section-label">Reflection</div>
+    <p class="section-label">Reflection</p>
     <div class="section-body">
       <h2>What I learned.</h2>
 

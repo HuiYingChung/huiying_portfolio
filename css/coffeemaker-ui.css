@@ -141,6 +141,7 @@ strong { color: var(--text); font-weight: 600; }
 .quote-source {
   font-family: 'Syne', sans-serif; font-size: 0.72rem; font-weight: 600;
   letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase;
+  display: block;
 }
 
 /* ── Before / After ── */

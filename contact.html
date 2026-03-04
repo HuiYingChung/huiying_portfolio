@@ -43,25 +43,6 @@
       transition: background 0.3s, color 0.3s;
     }
 
-    /* ── Nav ── */
-    nav {
-      padding: 0 2rem;
-      height: 64px;
-      background: var(--nav-bg);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-    .nav-back {
-      font-family: var(--font-display);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      transition: color 0.2s;
-    }
-    .nav-back:hover { color: var(--accent); }
-
     /* ── Page layout ── */
     .page-wrap {
       min-height: 100svh;
@@ -199,7 +180,7 @@
         <input type="hidden" name="_subject" value="New message from your portfolio" />
         <input type="hidden" name="_next" value="https://huiying-portfolio.vercel.app/contact-thanks.html" />
         <!-- Honeypot spam filter -->
-        <input type="text" name="_gotcha" style="display:none" />
+        <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1" autocomplete="off" />
 
         <div class="field-row">
           <div class="field-group">

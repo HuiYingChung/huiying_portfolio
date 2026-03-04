@@ -319,6 +319,8 @@ nav {
   gap: 0;
   margin: 20px 0 28px;
   position: relative;
+  list-style: none;
+  padding: 0;
 }
 .phase-list::before {
   content: '';

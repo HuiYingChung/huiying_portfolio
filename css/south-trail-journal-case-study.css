@@ -230,6 +230,7 @@ section:nth-child(even) { background: var(--bg-2); }
   margin-top: 3.5rem;
   display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 0; position: relative;
+  list-style: none; padding: 0;
 }
 .process-timeline::before {
   content: '';
@@ -358,6 +359,7 @@ section:nth-child(even) { background: var(--bg-2); }
 }
 .page-features {
   display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem;
+  list-style: none; padding: 0;
 }
 .feature-tag {
   font-size: 0.65rem; padding: 0.2rem 0.6rem; border-radius: 3px;
