@@ -16,14 +16,14 @@
 
   <!-- Nav -->
   <nav>
-    <a class="nav-back" href="index.html">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M10 3L5 8l5 5"/>
-      </svg>
-      Portfolio
-    </a>
+    <a href="index.html" class="nav-logo">Huiying Chung</a>
     <div style="display:flex;align-items:center;gap:0.75rem;">
-      <span class="nav-tag">Case Study</span>
+      <a class="nav-back" href="index.html#work">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M10 3L5 8l5 5"/>
+        </svg>
+        All Work
+      </a>
       <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
         <svg class="icon-moon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/></svg>
         <svg class="icon-sun" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg>
@@ -73,28 +73,25 @@
 
     <hr class="divider" />
 
-    <!-- Overview -->
-    <section class="fade-in">
-      <div class="section-eyebrow">01 — Overview</div>
-      <h2>The Tension Between Form and Function</h2>
-      <p>
-        The KitchenAid semi-automatic espresso machine I own is visually elegant —
-        smooth metallic surfaces, a minimal control panel, no clutter. Yet every week it
-        generates friction: buttons that don't look like buttons, feedback signals with
-        inconsistent meanings, and hidden interactions that require consulting a manual.
-      </p>
-      <p>
-        This project applies <strong>Donald Norman's design principles</strong> — signifiers,
-        affordances, feedback, mapping, conceptual models, and constraints — as a structured
-        lens to identify exactly where the interface fails its users. It then proposes a
-        redesigned interface that preserves the minimal aesthetic while resolving the
-        core usability problems.
-      </p>
-    </section>
+    <!-- TL;DR -->
+    <div class="tldr-strip fade-in">
+      <div class="tldr-item">
+        <div class="tldr-label">Problem</div>
+        <div class="tldr-text">A visually minimal espresso machine with 4 usability failures — missing signifiers, ambiguous feedback, broken mental model, hidden interactions</div>
+      </div>
+      <div class="tldr-item">
+        <div class="tldr-label">Approach</div>
+        <div class="tldr-text">Applied Norman's 6 design principles to map every failure point, then redesigned to preserve aesthetics while fixing the interaction model</div>
+      </div>
+      <div class="tldr-item">
+        <div class="tldr-label">Result</div>
+        <div class="tldr-text">6 violations resolved across 4 principles — first-time users can operate the machine without the manual</div>
+      </div>
+    </div>
 
     <!-- Problem -->
     <section class="fade-in">
-      <div class="section-eyebrow">02 — Problem</div>
+      <div class="section-eyebrow">01 — Problem</div>
       <h2>Four Layers of Usability Failure</h2>
       <p>
         Through daily use and systematic analysis, I identified four interconnected issues
@@ -132,7 +129,7 @@
 
     <!-- Process -->
     <section class="fade-in">
-      <div class="section-eyebrow">03 — Process</div>
+      <div class="section-eyebrow">02 — Process</div>
       <h2>Applying Norman's Framework Systematically</h2>
       <p>
         Rather than listing problems intuitively, I structured the analysis around six
@@ -140,37 +137,39 @@
         UX theory:
       </p>
 
-      <div class="principle-list">
-        <div class="principle-row">
-          <div class="principle-name">Signifiers</div>
-          <div class="principle-desc">Flat, seamless bars provide no visual affordance for pressing. The perceived action possibility is zero without prior manual reading.</div>
+      <div class="principle-compact">
+        <div class="pc-row">
+          <span class="pc-name">Signifiers</span>
+          <span class="pc-desc">Flat bars look purely decorative — zero visual affordance for pressing without reading the manual first.</span>
         </div>
-        <div class="principle-row">
-          <div class="principle-name">Affordances</div>
-          <div class="principle-desc">Unlike raised or tactile buttons that invite physical interaction, the bars appear purely decorative — weakening the connection between object and action.</div>
+        <div class="pc-row">
+          <span class="pc-name">Affordances</span>
+          <span class="pc-desc">No tactile cue invites physical interaction; the bars feel like trim, not controls.</span>
         </div>
-        <div class="principle-row">
-          <div class="principle-name">Feedback</div>
-          <div class="principle-desc">LED blinking is reused across contexts with different meanings. No audible signal when preheating completes. No multi-sensory confirmation layer.</div>
+        <div class="pc-row">
+          <span class="pc-name">Feedback</span>
+          <span class="pc-desc">Same LED blink carries different meanings across brewing and cleaning contexts.</span>
         </div>
-        <div class="principle-row">
-          <div class="principle-name">Mapping</div>
-          <div class="principle-desc">Button placement does not correspond to the logical steps of brewing. Users can't intuit which button does what based on position or sequence.</div>
+        <div class="pc-row">
+          <span class="pc-name">Mapping</span>
+          <span class="pc-desc">Button placement ignores the natural coffee-making sequence — users can't intuit order from position.</span>
         </div>
-        <div class="principle-row">
-          <div class="principle-name">Conceptual Model</div>
-          <div class="principle-desc">The interface fails to represent the user's mental workflow. The gap between how the machine "thinks" and how users "think" creates systematic errors.</div>
+        <div class="pc-row">
+          <span class="pc-name">Conceptual Model</span>
+          <span class="pc-desc">Interface fails to represent the user's mental workflow; the gap causes systematic, repeatable errors.</span>
         </div>
-        <div class="principle-row">
-          <div class="principle-name">Constraints</div>
-          <div class="principle-desc">No error prevention for low water or improperly installed portafilter. The machine allows dangerous or failed states without warning.</div>
+        <div class="pc-row">
+          <span class="pc-name">Constraints</span>
+          <span class="pc-desc">No error prevention for low water or improperly installed portafilter — dangerous states pass silently.</span>
         </div>
       </div>
+
+
     </section>
 
     <!-- Redesign -->
     <section class="fade-in">
-      <div class="section-eyebrow">04 — Redesign</div>
+      <div class="section-eyebrow">03 — Redesign</div>
       <h2>Solving Problems Without Losing Minimal Aesthetics</h2>
       <p>
         The redesign goal was specific: <strong>fix the interaction model, not the visual identity</strong>.
@@ -223,8 +222,23 @@
 
     <!-- Outcomes -->
     <section class="fade-in">
-      <div class="section-eyebrow">05 — Outcomes</div>
+      <div class="section-eyebrow">04 — Outcomes</div>
       <h2>What Changed and Why It Matters</h2>
+
+      <div class="stat-strip">
+        <div class="stat-item">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Usability violations identified</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Norman principles violated</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">6/6</span>
+          <span class="stat-label">Resolved in redesign</span>
+        </div>
+      </div>
 
       <div class="outcome-list">
         <div class="outcome-item">
@@ -256,7 +270,7 @@
 
     <!-- Reflection -->
     <section class="fade-in">
-      <div class="section-eyebrow">06 — Reflection</div>
+      <div class="section-eyebrow">05 — Reflection</div>
       <h2>What I Learned</h2>
       <div class="reflection-box">
         <p>
@@ -290,7 +304,7 @@
         </svg>
         Live Prototype
       </a>
-      <a class="btn-link ghost" href="index.html">← Back to Portfolio</a>
+      <a class="btn-link ghost" href="index.html#work">← Back to Portfolio</a>
     </div>
 
   </main>

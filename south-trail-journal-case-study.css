@@ -1,31 +1,37 @@
 :root {
-  --bg:       #0f0e14;
-  --bg-2:     #16141f;
-  --bg-3:     #1e1b2e;
-  --surface:  #252238;
-  --border:   rgba(107,63,160,0.18);
-  --purple:   #6B3FA0;
-  --purple-l: #8b5fc7;
-  --purple-xl:#b48be0;
-  --text:     #e8e4f0;
-  --muted:    #8a84a0;
-  --dim:      #3d3858;
-  --nav-bg:   rgba(15, 14, 20, 0.85);
+  --bg:        #0f0e14;
+  --bg-2:      #16141f;
+  --bg-3:      #1e1b2e;
+  --surface:   #252238;
+  --border:    rgba(107,63,160,0.18);
+  --purple:    #6B3FA0;
+  --purple-l:  #8b5fc7;
+  --purple-xl: #b48be0;
+  --text:      #e8e4f0;
+  --muted:     #8a84a0;
+  --dim:       #3d3858;
+  --nav-bg:    rgba(15, 14, 20, 0.85);
+  /* aliases for shared components */
+  --accent:    var(--purple-xl);
+  --text-muted:var(--muted);
 }
 
 [data-theme="light"] {
-  --bg:       #F6F5F2;
-  --bg-2:     #EEECEA;
-  --bg-3:     #E5E2DC;
-  --surface:  #FFFFFF;
-  --border:   rgba(107, 63, 160, 0.12);
-  --purple:   #6B3FA0;
-  --purple-l: #8b5fc7;
-  --purple-xl:#6B3FA0;
-  --text:     #1A1520;
-  --muted:    #5C5878;
-  --dim:      #B0ACBF;
-  --nav-bg:   rgba(246, 245, 242, 0.92);
+  --bg:        #F6F5F2;
+  --bg-2:      #EEECEA;
+  --bg-3:      #E5E2DC;
+  --surface:   #FFFFFF;
+  --border:    rgba(107, 63, 160, 0.12);
+  --purple:    #6B3FA0;
+  --purple-l:  #8b5fc7;
+  --purple-xl: #6B3FA0;
+  --text:      #1A1520;
+  --muted:     #5C5878;
+  --dim:       #B0ACBF;
+  --nav-bg:    rgba(246, 245, 242, 0.92);
+  /* aliases for shared components */
+  --accent:    var(--purple);
+  --text-muted:var(--muted);
 }
 
 body {
@@ -35,28 +41,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── NAV ── */
-nav {
-  padding: 1.25rem 3rem;
-  background: var(--nav-bg);
-  backdrop-filter: blur(16px);
-}
-.nav-logo {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--purple-xl);
-  text-decoration: none;
-}
-.nav-logo:hover { opacity: 0.8; }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a {
-  font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase;
-  text-decoration: none; color: var(--muted);
-  transition: color 0.25s;
-}
-.nav-links a:hover { color: var(--text); }
+/* ── NAV ── (visual styles in shared.css) ── */
 
 /* ── HERO ── */
 .hero {

@@ -15,15 +15,15 @@
 
   <!-- NAV -->
   <nav>
-    <span class="nav-logo">Hui<span>.</span></span>
+    <a href="index.html" class="nav-logo">Huiying Chung</a>
     <div class="nav-right">
-      <a class="nav-back" href="index.html">
+      <a class="nav-back" href="index.html#work">
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M10 12L6 8l4-4"/>
         </svg>
-        Back to work
+        All Work
       </a>
-      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
         <!-- sun -->
         <svg class="icon-sun" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="10" cy="10" r="4"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.93 4.93l1.41 1.41M13.66 13.66l1.41 1.41M4.93 15.07l1.41-1.41M13.66 6.34l1.41-1.41"/>
@@ -56,34 +56,43 @@
 
   <div class="page-divider"></div>
 
-  <!-- 01 OVERVIEW -->
-  <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
-    <div class="section-label">Overview</div>
-    <div class="section-body">
-      <h2>A small supply station for your busy day.</h2>
-      <p>Little Cafe is a fictional micro-cafe concept built as the final project for GIT 417. The shop carries a tightly curated menu: two espresso drinks, two breakfast croissants, and two artisan cookies — six products total.</p>
-      <p>The project demonstrates <strong>semantic HTML5</strong>, <strong>modular CSS with custom properties</strong>, and <strong>vanilla JavaScript</strong> — including DOM manipulation, a dynamic shopping cart, regex-based form validation with inline errors, and a complete dark/light mode system. All code was written from scratch without frameworks.</p>
-
-      <div class="stat-row">
-        <div class="stat">
-          <span class="stat-value">6</span>
-          <span class="stat-label">Products</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value">1</span>
-          <span class="stat-label">HTML file</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value">0</span>
-          <span class="stat-label">Frameworks</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value">~0</span>
-          <span class="stat-label">div tags (self-challenge)</span>
-        </div>
+  <!-- TL;DR -->
+  <div class="reveal" style="max-width:1080px;margin:clamp(48px,7vw,80px) auto 0;padding:0 clamp(24px,8vw,120px);">
+    <div class="tldr-strip">
+      <div class="tldr-item">
+        <div class="tldr-label">Problem</div>
+        <div class="tldr-text">Course required a functional single-page shop — real cart logic, form validation, dark mode, responsive UX — all in vanilla JS, no frameworks</div>
+      </div>
+      <div class="tldr-item">
+        <div class="tldr-label">Built</div>
+        <div class="tldr-text">Boutique cafe concept in semantic HTML5 + vanilla JS + CSS custom properties. Zero frameworks, ~zero div tags — every element is purposeful</div>
+      </div>
+      <div class="tldr-item">
+        <div class="tldr-label">Result</div>
+        <div class="tldr-text">Real-time cart with 8% tax, regex form validation, dark/light toggle, mobile-optimized UX — deployed to GitHub Pages</div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Stats -->
+  <div class="stat-row reveal" style="max-width:1080px;margin:0 auto clamp(32px,5vw,56px);padding:0 clamp(24px,8vw,120px);">
+    <div class="stat">
+      <span class="stat-value">6</span>
+      <span class="stat-label">Products</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">1</span>
+      <span class="stat-label">HTML file</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">0</span>
+      <span class="stat-label">Frameworks</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value">~0</span>
+      <span class="stat-label">div tags</span>
+    </div>
+  </div>
 
   <div class="s-divider" style="max-width:1080px;margin:0 auto clamp(60px,8vw,96px);padding:0 clamp(24px,8vw,120px);"><div style="height:1px;background:var(--border);"></div></div>
 
@@ -231,23 +240,20 @@
   <section class="layout reveal" style="margin: 0 auto clamp(72px,10vw,120px);">
     <div class="section-label">Process Note</div>
     <div class="section-body">
-      <h2>Working with AI — openly.</h2>
-      <p>I used AI tools (GitHub Copilot within VS Code, and Claude by Anthropic) as collaborative thinking and learning partners throughout this project. I want to be transparent about what that actually looked like:</p>
-
-      <div class="ai-disclosure">
-        <div class="ai-disclosure-header">
-          <span class="ai-badge">Transparent</span>
-          <h4>How AI was used in this project</h4>
+      <details class="deep-dive">
+        <summary>Working with AI — openly ↓</summary>
+        <div style="padding:1.25rem 1.5rem;">
+          <p style="margin-bottom:1rem;">I used AI tools (GitHub Copilot and Claude by Anthropic) as collaborative thinking and learning partners throughout this project:</p>
+          <ul class="bullet-list">
+            <li><strong>Concept development</strong> — sounding board for brand name, tagline, and voice before any design work.</li>
+            <li><strong>JavaScript learning</strong> — when I didn't yet understand cart state logic or conditional form validation, I asked AI to explain the concepts before writing the code myself.</li>
+            <li><strong>Debugging</strong> — described problems collaboratively. Understanding <em>why</em> something broke was always the goal, not just the fix.</li>
+            <li><strong>Design decisions</strong> — used AI to list trade-offs (sticky cart vs. modal, color token structure). All final calls were mine.</li>
+            <li><strong>Mobile UX feature</strong> — the fixed cart icon and responsive rebuild were developed with AI assistance, after I identified the problem myself.</li>
+          </ul>
+          <p style="margin-top:1rem;">All code was written and typed by me. Using AI as a learning accelerator is an honest professional skill — I'd rather document this openly than leave it out.</p>
         </div>
-        <ul class="bullet-list">
-          <li><strong>Concept development</strong> — used AI as a sounding board to refine the brand name, tagline, and voice before any design work.</li>
-          <li><strong>JavaScript learning</strong> — when I didn't yet understand cart state logic or conditional form validation, I asked AI to explain the concepts before writing the code myself. Like asking a senior developer to walk through the reasoning.</li>
-          <li><strong>Debugging</strong> — described problems to AI and worked through solutions collaboratively. Understanding <em>why</em> something broke was always the goal, not just getting a fix.</li>
-          <li><strong>Design decisions</strong> — used AI to list trade-offs (sticky cart vs. modal, color token structure for dark mode). All final calls were mine.</li>
-          <li><strong>Mobile UX feature</strong> — the fixed cart icon and responsive rebuild were developed with AI assistance, after I identified the problem myself.</li>
-        </ul>
-        <p style="margin-top:4px;">All code was written and typed by me. I believe using AI as a learning accelerator is an honest professional skill — and I'd rather document this openly than leave it out.</p>
-      </div>
+      </details>
     </div>
   </section>
 
@@ -259,24 +265,20 @@
     <div class="section-body">
       <h2>What I learned.</h2>
 
-      <h3>What I struggled with</h3>
-      <p>Cart state management was the steepest climb — pushing product objects, removing items by ID, and rebuilding the DOM correctly every time without duplicating nodes or losing state. Conditional form validation (phone field only validates if the user picks phone; email only if email) also took several iterations to clean up.</p>
+      <p>Cart state management was the steepest climb — pushing product objects, removing by ID, and rebuilding the DOM each time without duplicating nodes. Conditional form validation (phone validates only if the user picks phone; email only if email) also took several iterations to get right.</p>
 
-      <h3>What I enjoyed most</h3>
-      <p>The moment the Add button was clicked and the cart total updated instantly — that was genuinely satisfying. Watching the entire color system flip from warm cream to deep espresso with a single toggle was also a highlight. The Zero Div challenge gave me more confidence in writing meaningful, accessible HTML.</p>
+      <p>The most satisfying moment: clicking Add and watching the cart total update live. Going back to make the site responsive — and realizing mid-process that layout wasn't the only thing that needed fixing on mobile — was the most useful learning. <strong>Asking "what does a user actually need here" rather than "does this display correctly"</strong> is the difference between a coded exercise and a considered design.</p>
 
-      <h3>The bigger takeaway</h3>
-      <p>Going back to make the site responsive — and realizing mid-process that layout wasn't the only thing that needed fixing on mobile — was the most useful learning. <strong>Asking "what does a user actually need here" rather than "does this display correctly"</strong> is the difference between a coded exercise and a considered design.</p>
-
-      <h3>Next steps</h3>
-      <ul class="bullet-list" style="margin-top:8px;">
-        <li>Upgrade the mobile cart to a slide-up drawer (no anchor jump needed)</li>
-        <li>Backend: connect contact form to Formspree or EmailJS</li>
-        <li>Add +/− quantity controls on cart line items</li>
-        <li>Refactor JS toward ES6+ (arrow functions, destructuring, array methods)</li>
-        <li>Full accessibility audit with Lighthouse / axe</li>
-        <li>SEO: meta description, Open Graph, JSON-LD for LocalBusiness</li>
-      </ul>
+      <details class="deep-dive" style="margin-top:1.5rem;">
+        <summary>Next steps ↓</summary>
+        <ul class="bullet-list" style="padding:1rem 1.5rem;">
+          <li>Upgrade the mobile cart to a slide-up drawer</li>
+          <li>Add +/− quantity controls on cart line items</li>
+          <li>Refactor JS toward ES6+ (arrow functions, destructuring, array methods)</li>
+          <li>Full accessibility audit with Lighthouse / axe</li>
+          <li>SEO: meta description, Open Graph, JSON-LD for LocalBusiness</li>
+        </ul>
+      </details>
     </div>
   </section>
 
@@ -306,7 +308,7 @@
   <!-- FOOTER -->
   <footer>
     <p>© 2025 Hui Chung</p>
-    <a href="index.html">← Back to portfolio</a>
+    <a href="index.html#work">← Back to portfolio</a>
   </footer>
 
   <script src="little-cafe-case-study.js" defer></script>

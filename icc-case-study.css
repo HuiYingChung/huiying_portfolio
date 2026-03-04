@@ -5,6 +5,7 @@
   --ink2: #4A4A52;
   --ink3: #8A8A94;
   --accent: #6B3FA0;
+  --accent-dim: rgba(107, 63, 160, 0.1);
   --accent2: #219EBC;
   --icc-navy: #023047;
   --icc-orange: #FB8500;
@@ -12,6 +13,8 @@
   --white: #FFFFFF;
   --placeholder-bg: #E8E6E1;
   --nav-bg: rgba(247, 246, 243, 0.88);
+  /* aliases for shared components */
+  --text-muted: var(--ink3);
 }
 
 [data-theme="dark"] {
@@ -24,6 +27,8 @@
   --white: #1C1915;
   --placeholder-bg: #222018;
   --nav-bg: rgba(19, 18, 15, 0.92);
+  /* aliases for shared components */
+  --text-muted: var(--ink3);
 }
 
 body {
@@ -31,23 +36,10 @@ body {
   color: var(--ink);
 }
 
-/* ── NAV ── */
-nav {
-  padding: 1.2rem 4rem;
-  background: var(--nav-bg);
-  backdrop-filter: blur(12px);
-}
+/* ── NAV ── (visual styles in shared.css) ── */
 .nav-logo {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.9rem; font-weight: 700;
-  color: var(--ink); text-decoration: none;
-  letter-spacing: 0.02em;
+  color: var(--ink);
 }
-.nav-back {
-  font-size: 0.8rem; color: var(--ink3);
-  transition: color 0.2s;
-}
-.nav-back:hover { color: var(--accent); }
 
 /* ── HERO ── */
 .hero {

@@ -18,7 +18,7 @@ body {
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 
-/* ── Nav (structural) ── */
+/* ── Nav ── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -27,16 +27,39 @@ nav {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
+  padding: 1.1rem 2.5rem;
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
-/* ── Nav back link (structural) ── */
+/* ── Nav logo ── */
+.nav-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: inherit;
+  text-decoration: none;
+}
+.nav-logo:hover { opacity: 0.7; }
+
+/* ── Nav back link ── */
 .nav-back {
   display: flex;
   align-items: center;
   gap: 0.4rem;
   text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  transition: opacity 0.2s;
 }
 .nav-back svg { width: 14px; height: 14px; }
+.nav-back:hover { opacity: 0.7; }
 
 /* ── Animations ── */
 @keyframes fadeUp {
@@ -89,3 +112,47 @@ nav {
 /* South Trail defaults to dark, so light mode shows moon */
 [data-theme="light"] .theme-btn .icon-sun  { display: none; }
 [data-theme="light"] .theme-btn .icon-moon { display: block; }
+
+/* ── TL;DR Strip (shared across case studies) ── */
+.tldr-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+.tldr-item {
+  padding: 1.4rem 1.5rem;
+  border-right: 1px solid var(--border);
+}
+.tldr-item:last-child { border-right: none; }
+.tldr-label {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.65rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 0.5rem;
+}
+.tldr-text { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; }
+@media (max-width: 600px) {
+  .tldr-strip { grid-template-columns: 1fr; }
+  .tldr-item { border-right: none; border-bottom: 1px solid var(--border); }
+  .tldr-item:last-child { border-bottom: none; }
+}
+
+/* ── Deep Dive expandable (shared across case studies) ── */
+.deep-dive {
+  margin-top: 1rem;
+  border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+}
+.deep-dive summary {
+  padding: 0.85rem 1.2rem;
+  font-family: 'Syne', sans-serif; font-size: 0.75rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
+  cursor: pointer; list-style: none; user-select: none;
+  transition: background 0.15s;
+}
+.deep-dive summary::-webkit-details-marker { display: none; }
+.deep-dive summary:hover { background: var(--accent-dim, rgba(107,63,160,0.08)); }
+.deep-dive[open] summary { border-bottom: 1px solid var(--border); }
+.deep-dive > * + * { padding: 1rem; }

@@ -27,6 +27,7 @@
   --text-muted:    #5C5874;
   --tag-bg:      rgba(107,63,160,0.15);
   --tag-text:    #B899E8;
+  --nav-bg:      rgba(13, 13, 18, 0.85);
 }
 
 [data-theme="light"] {
@@ -41,6 +42,7 @@
   --text-muted:    #9691AA;
   --tag-bg:      rgba(107,63,160,0.08);
   --tag-text:    #6B3FA0;
+  --nav-bg:      rgba(247, 246, 250, 0.85);
 }
 
 /* ─── RESET ──────────────────────────────────────────────────────────── */
@@ -58,31 +60,19 @@ body {
 }
 
 /* ─── NAV ────────────────────────────────────────────────────────────── */
+/* structural + font styles in shared.css; only page-specific overrides here */
 nav {
-  padding: 0 clamp(24px, 5vw, 72px);
-  height: 64px;
-  background: color-mix(in srgb, var(--bg) 85%, transparent);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   transition: background var(--transition);
 }
 .nav-logo {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 0.02em;
   color: var(--text-primary);
   opacity: 0.85;
 }
 .nav-logo span { color: var(--accent-light); }
 .nav-right { display: flex; align-items: center; gap: 20px; }
-.nav-back {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-secondary);
-  transition: color var(--transition);
-}
-.nav-back:hover { color: var(--text-primary); }
 
 .theme-btn {
   width: 36px; height: 36px;

@@ -2,7 +2,7 @@
 
 // Theme toggle
 const root = document.documentElement;
-const btn  = document.getElementById('themeToggle');
+const btn  = document.getElementById('themeBtn');
 const saved = localStorage.getItem('theme') || 'dark';
 root.setAttribute('data-theme', saved);
 

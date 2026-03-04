@@ -19,7 +19,7 @@
 <nav>
   <a href="index.html" class="nav-logo">Huiying Chung</a>
   <div style="display:flex;align-items:center;gap:0.75rem;">
-    <a href="index.html" class="nav-back">
+    <a href="index.html#work" class="nav-back">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M10 3L5 8l5 5"/>
       </svg>
@@ -75,6 +75,22 @@
 <!-- MAIN CONTENT -->
 <main class="container">
 
+  <!-- TL;DR -->
+  <div class="tldr-strip fade-in">
+    <div class="tldr-item">
+      <div class="tldr-label">Problem</div>
+      <div class="tldr-text">Two conflicting websites, hidden navigation, and unclear registration left Houston families unable to find or enroll in ICC's programs</div>
+    </div>
+    <div class="tldr-item">
+      <div class="tldr-label">Approach</div>
+      <div class="tldr-text">Stakeholder interviews → unified IA → 6 design decisions → Figma prototype handed to a WordPress dev team</div>
+    </div>
+    <div class="tldr-item">
+      <div class="tldr-label">Result</div>
+      <div class="tldr-text">Live at icc-houston.org — one unified site, 3-click registration path, staff-maintainable without developer help</div>
+    </div>
+  </div>
+
   <!-- BACKGROUND -->
   <div class="section fade-in">
     <div class="section-inner">
@@ -82,7 +98,6 @@
       <div class="section-content">
         <h2>Houston's first Chinese school needed a digital upgrade</h2>
         <p class="lead">The Institute of Chinese Culture (ICC), founded in 1970, serves hundreds of Houston families across Saturday Chinese School, a Mandarin Immersion Preschool, and Adult Classes.</p>
-        <p>Despite its 50+ year history, the school's website had not kept pace. Two separate domains (icc-houston.org and iccschooltx.org) operated with inconsistent content, outdated design, and no clear navigation — leaving parents frustrated and registration rates at risk.</p>
         <p>I was brought in as the sole UX designer to lead the redesign from research through prototyping, working directly with school leadership and a development team in Bangalore.</p>
       </div>
     </div>
@@ -342,8 +357,12 @@
           </div>
         </div>
 
+        <p style="margin-top:1.25rem; font-size:0.85rem; color:var(--ink3); padding:0.8rem 1rem; background:var(--bg2); border-radius:8px; border-left:3px solid var(--border); line-height:1.6;">
+          <strong style="color:var(--ink2);">Note:</strong> The live site reflects client adjustments and WordPress theme constraints made during implementation — some visual and structural details differ from the original Figma prototype.
+        </p>
+
         <!-- ✦ REPLACE: Final website screenshots -->
-        <div class="grid-2" style="margin-top:0.5rem;">
+        <div class="grid-2" style="margin-top:1.25rem;">
           <div>
             <div class="img-placeholder img-placeholder-md img-slot">
               <span class="ph-label">Live Site — Classes Page</span>
@@ -368,7 +387,10 @@
           <h2>What I learned</h2>
           <p style="margin-top:1rem;">This project reinforced that good UX is as much about structured communication as it is about design. Balancing an outdated CMS, a live site that couldn't go dark during registration season, content arriving in pieces, and a development team working across time zones required clear documentation and pragmatic decisions at every step.</p>
           <p style="margin-top:1rem;">The constraints pushed me to prioritize ruthlessly — every design decision had to justify itself against user needs, not just aesthetic preference.</p>
-          <p style="margin-top:1rem; color:rgba(255,255,255,0.5); font-size:0.88rem;"><strong style="color:rgba(255,255,255,0.7);">Next step:</strong> Run usability testing with actual parents focusing on the registration flow and navigation structure against the two original task scenarios.</p>
+          <details class="deep-dive" style="margin-top:1rem;">
+            <summary>Next Steps</summary>
+            <p>Run usability testing with actual parents focusing on the registration flow and navigation structure against the two original task scenarios.</p>
+          </details>
         </div>
       </div>
     </div>
@@ -378,7 +400,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>Designed by Huiying Chung · 2026 · <a href="index.html" style="color:inherit;">← Back to Portfolio</a></p>
+  <p>Designed by Huiying Chung · 2026 · <a href="index.html#work" style="color:inherit;">← Back to Portfolio</a></p>
 </footer>
 
 <script src="icc-case-study.js"></script>

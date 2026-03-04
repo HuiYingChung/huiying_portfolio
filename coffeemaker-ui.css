@@ -32,23 +32,7 @@ body {
   color: var(--text);
 }
 
-/* ── Nav ── */
-nav {
-  padding: 1.2rem 2.5rem;
-  background: var(--nav-bg);
-  backdrop-filter: blur(12px);
-}
-.nav-back {
-  font-family: 'Syne', sans-serif; font-size: 0.8rem; font-weight: 600;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--accent);
-  transition: opacity 0.2s;
-}
-.nav-back:hover { opacity: 0.7; }
-.nav-tag {
-  font-family: 'Syne', sans-serif; font-size: 0.75rem; font-weight: 600;
-  letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted);
-}
+/* ── Nav ── (visual styles in shared.css) ── */
 
 /* ── Layout ── */
 .container { max-width: 760px; margin: 0 auto; padding: 0 2rem; }
@@ -244,6 +228,49 @@ strong { color: var(--text); font-weight: 600; }
 .reflection-box {
   background: var(--bg-card2); border-radius: 14px; padding: 2rem;
   border: 1px solid var(--border);
+}
+
+/* ── Compact Principle List ── */
+.principle-compact {
+  display: flex; flex-direction: column;
+  border: 1px solid var(--border); border-radius: 10px;
+  overflow: hidden; margin-top: 1.5rem;
+}
+.pc-row {
+  display: grid; grid-template-columns: 130px 1fr;
+  gap: 1rem; padding: 0.75rem 1.2rem;
+  border-bottom: 1px solid var(--border); align-items: baseline;
+}
+.pc-row:last-child { border-bottom: none; }
+.pc-name {
+  font-family: 'Syne', sans-serif; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent);
+}
+.pc-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; }
+@media (max-width: 500px) { .pc-row { grid-template-columns: 1fr; gap: 0.25rem; } }
+
+/* ── Stat Strip ── */
+.stat-strip {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--border); border-radius: 12px;
+  overflow: hidden; margin: 1.5rem 0;
+  background: var(--bg-card);
+}
+.stat-item {
+  padding: 1.25rem 1.5rem;
+  border-right: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 0.3rem;
+}
+.stat-item:last-child { border-right: none; }
+.stat-num {
+  font-family: 'Syne', sans-serif; font-size: 1.8rem; font-weight: 800;
+  color: var(--accent); line-height: 1;
+}
+.stat-label { font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+@media (max-width: 600px) {
+  .stat-strip { grid-template-columns: 1fr 1fr; }
+  .stat-item:nth-child(2) { border-right: none; }
+  .stat-item:nth-child(3) { border-top: 1px solid var(--border); grid-column: 1 / -1; }
 }
 
 /* ── Footer ── */
