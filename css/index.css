@@ -485,10 +485,87 @@ footer { border-top: 1px solid var(--border); padding: var(--space-md) 0; }
 /* ════════════════════════════════════════════════════════════
    RESPONSIVE
 ════════════════════════════════════════════════════════════ */
+/* ════════════════════════════════════════════════════════════
+   HAMBURGER + MOBILE MENU
+════════════════════════════════════════════════════════════ */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 34px;
+  height: 34px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-muted);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s, background 0.2s;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0; right: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 99;
+  padding: 1.25rem 1.5rem 1.5rem;
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.mobile-menu a {
+  display: block;
+  padding: 0.6rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s;
+}
+.mobile-menu li:last-child a { border-bottom: none; }
+.mobile-menu a:hover { color: var(--accent); }
+.mobile-menu .nav-resume {
+  color: var(--text-muted);
+  border: none;
+  padding: 0.6rem 0;
+  border-radius: 0;
+  background: none;
+}
+.mobile-menu .nav-resume:hover {
+  background: none !important;
+  color: var(--accent) !important;
+}
+
 @media (max-width: 768px) {
   .about-grid    { grid-template-columns: 1fr; }
   .work-grid     { grid-template-columns: 1fr; }
   .contact-inner { grid-template-columns: 1fr; }
   .social-links  { justify-self: start; }
   .nav-links     { display: none; }
+  .hamburger     { display: flex; }
+  .mobile-menu   { display: block; }
 }

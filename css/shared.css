@@ -24,18 +24,19 @@ nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid var(--border);
-  padding: 1.1rem 2.5rem;
   background: var(--nav-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
-/* ── Nav right group (back link + theme btn) ── */
-.nav-controls { display: flex; align-items: center; gap: 0.75rem; }
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 64px;
+}
 
 /* ── Nav logo ── */
 .nav-logo {
@@ -45,25 +46,59 @@ nav {
   letter-spacing: 0.02em;
   color: inherit;
   text-decoration: none;
+  flex-shrink: 0;
 }
 .nav-logo:hover { opacity: 0.7; }
 
-/* ── Nav back link ── */
-.nav-back {
+/* ── Nav links ── */
+.nav-links {
   display: flex;
   align-items: center;
+  gap: 1.75rem;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-muted, #6A6478);
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--accent, #6B3FA0); }
+
+/* ── Résumé button in nav ── */
+.nav-resume {
+  color: var(--accent, #6B3FA0) !important;
+  border: 1px solid var(--accent, #6B3FA0);
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s !important;
+}
+.nav-resume:hover {
+  background: var(--accent, #6B3FA0);
+  color: var(--bg, #fff) !important;
+}
+
+/* ── Nav back link (← All Work) — hidden on desktop, shown on mobile ── */
+.nav-back {
+  display: none;
+  align-items: center;
   gap: 0.4rem;
-  text-decoration: none;
-  font-family: 'Syne', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent);
-  transition: opacity 0.2s;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted, #6A6478);
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
 }
 .nav-back svg { width: 14px; height: 14px; }
-.nav-back:hover { opacity: 0.7; }
+.nav-back:hover { color: var(--accent, #6B3FA0); }
+
+/* ── Mobile: hide nav-links, show nav-back ── */
+@media (max-width: 768px) {
+  .nav-inner { padding: 0 1.25rem; }
+  .nav-links  { display: none; }
+  .nav-back   { display: flex; }
+}
 
 /* ── Animations ── */
 @keyframes fadeUp {
