@@ -37,32 +37,29 @@
 <!-- HERO -->
 <header class="hero">
   <div class="container">
-    <div class="hero-tag">UX Writing · Technical Communication</div>
+    <p class="hero-tag">UX Writing · Technical Communication</p>
     <h1>Tensegrity Structure<br>Instruction Set</h1>
     <p class="hero-sub">Designing a build guide for mixed-ability users — and discovering where documentation fails through real usability testing.</p>
-    <div class="hero-meta">
+    <dl class="hero-meta">
       <div class="meta-item">
-        <span class="meta-label">Role</span>
-        <span class="meta-value">Sole Designer & Researcher</span>
+        <dt class="meta-label">Role</dt>
+        <dd class="meta-value">Sole Designer &amp; Researcher</dd>
       </div>
-      <div class="meta-divider"></div>
       <div class="meta-item">
-        <span class="meta-label">Context</span>
-        <span class="meta-value">TWC 150 · ASU</span>
+        <dt class="meta-label">Context</dt>
+        <dd class="meta-value">TWC 150 · ASU</dd>
       </div>
-      <div class="meta-divider"></div>
       <div class="meta-item">
-        <span class="meta-label">Methods</span>
-        <span class="meta-value">Usability Testing · Iterative Design</span>
+        <dt class="meta-label">Methods</dt>
+        <dd class="meta-value">Usability Testing · Iterative Design</dd>
       </div>
-      <div class="meta-divider"></div>
       <div class="meta-item">
-        <span class="meta-label">Year</span>
-        <span class="meta-value">2026</span>
+        <dt class="meta-label">Year</dt>
+        <dd class="meta-value">2026</dd>
       </div>
-    </div>
+    </dl>
     <a href="Chung_Huiying_Instruction_Set_Final.pdf" target="_blank" class="doc-link">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
         <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
         <polyline points="14 2 14 8 20 8"/>
         <line x1="12" y1="18" x2="12" y2="12"/>
@@ -71,13 +68,13 @@
       View Instruction Set (Final Draft)
       <span class="doc-link-badge">PDF</span>
     </a>
-    <div class="tag-row">
-      <span class="tag">UX Writing</span>
-      <span class="tag">Instructional Design</span>
-      <span class="tag">Usability Testing</span>
-      <span class="tag">Visual Communication</span>
-      <span class="tag">Iterative Design</span>
-    </div>
+    <ul class="tag-row">
+      <li><span class="tag">UX Writing</span></li>
+      <li><span class="tag">Instructional Design</span></li>
+      <li><span class="tag">Usability Testing</span></li>
+      <li><span class="tag">Visual Communication</span></li>
+      <li><span class="tag">Iterative Design</span></li>
+    </ul>
   </div>
 </header>
 
@@ -87,144 +84,148 @@
 
     <!-- OVERVIEW -->
     <section class="section reveal">
-      <div class="section-label">Overview</div>
+      <p class="section-label">Overview</p>
       <h2>The Challenge</h2>
       <p>Tensegrity structures — rigid parts held in balance by tension threads, never touching — are elegant in concept but surprisingly hard to build from written instructions. The challenge was to design a build guide clear enough for a complete beginner, robust enough to satisfy an experienced engineer, and honest enough to surface its own failures through real testing.</p>
       <p>This project follows a full UX documentation cycle: design → test with real users → identify friction → iterate.</p>
 
-      <div class="callout">
+      <blockquote class="callout">
         <p>"The problem wasn't that users lacked skill. Both testers got stuck in the same places — which meant the problem was in the design, not the user."</p>
-      </div>
+      </blockquote>
     </section>
 
     <!-- USERS -->
     <section class="section reveal">
-      <div class="section-label">Research</div>
+      <p class="section-label">Research</p>
       <h2>Two Very Different Users</h2>
       <p>I deliberately selected testers with contrasting profiles to stress-test the instructions across a wide ability range.</p>
 
-      <div class="user-grid">
-        <div class="user-card">
-          <div class="user-avatar">B</div>
-          <div class="user-name">Brian, 15</div>
-          <div class="user-role">High school sophomore · Low crafting confidence</div>
+      <ul class="user-grid">
+        <li class="user-card">
+          <span class="user-avatar" aria-hidden="true">B</span>
+          <h3 class="user-name">Brian, 15</h3>
+          <p class="user-role">High school sophomore · Low crafting confidence</p>
           <p class="user-trait">Skims text, relies on photos. Default response to confusion: ask his sister, not re-read. Short frustration threshold — multiple steps lead to sighs and stepping away.</p>
-          <div class="user-quote">"I can do it myself." → five minutes later → "Jessie, help me!"</div>
-        </div>
-        <div class="user-card">
-          <div class="user-avatar">K</div>
-          <div class="user-name">Kevin, 40</div>
-          <div class="user-role">Mechanical Engineer · 15+ years experience</div>
+          <blockquote class="user-quote">"I can do it myself." → five minutes later → "Jessie, help me!"</blockquote>
+        </li>
+        <li class="user-card">
+          <span class="user-avatar" aria-hidden="true">K</span>
+          <h3 class="user-name">Kevin, 40</h3>
+          <p class="user-role">Mechanical Engineer · 15+ years experience</p>
           <p class="user-trait">Reads the full manual before starting. Trusts structural intuition. High bar for clarity — if the instruction isn't systematic, he flags it immediately.</p>
-          <div class="user-quote">"Specify the knot type — 'secure knot' means nothing to someone without rigging experience."</div>
-        </div>
-      </div>
+          <blockquote class="user-quote">"Specify the knot type — 'secure knot' means nothing to someone without rigging experience."</blockquote>
+        </li>
+      </ul>
 
       <p>Brian took <strong>~60 minutes</strong>. Kevin took <strong>33 minutes</strong>. Both got stuck in the same places — Steps 6–9 — which immediately pointed to the instruction design, not the users' abilities.</p>
     </section>
 
     <!-- FRICTION MAP -->
     <section class="section reveal">
-      <div class="section-label">Key Findings</div>
+      <p class="section-label">Key Findings</p>
       <h2>Where the Instructions Broke Down</h2>
       <p>Mapping the friction points across both testers revealed a clear cluster in the threading and tensioning phase.</p>
 
-      <div class="friction-map">
-        <div class="friction-row">
+      <ul class="friction-map">
+        <li class="friction-row">
           <span class="step-badge medium">Step 1</span>
-          <div class="friction-desc"><strong>Bundle count error</strong> — Brian made 5 W-2' bundles instead of 6. Checklist wasn't visually prominent enough to prompt verification.</div>
+          <p class="friction-desc"><strong>Bundle count error</strong> — Brian made 5 W-2' bundles instead of 6. Checklist wasn't visually prominent enough to prompt verification.</p>
           <span class="friction-affected">Brian</span>
-        </div>
-        <div class="friction-row">
+        </li>
+        <li class="friction-row">
           <span class="step-badge medium">Step 3</span>
-          <div class="friction-desc"><strong>Hands-free problem</strong> — Hot glue + holding the post upright = three hands needed. Both testers improvised; Brian required his sister to intervene.</div>
+          <p class="friction-desc"><strong>Hands-free problem</strong> — Hot glue + holding the post upright = three hands needed. Both testers improvised; Brian required his sister to intervene.</p>
           <span class="friction-affected">Both</span>
-        </div>
-        <div class="friction-row">
+        </li>
+        <li class="friction-row">
           <span class="step-badge high">Step 6</span>
-          <div class="friction-desc"><strong>Two-hands bottleneck</strong> — Threading while holding both K frames and measuring 10 cm simultaneously. No workaround provided. Both testers improvised independently.</div>
+          <p class="friction-desc"><strong>Two-hands bottleneck</strong> — Threading while holding both K frames and measuring 10 cm simultaneously. No workaround provided. Both testers improvised independently.</p>
           <span class="friction-affected">Both</span>
-        </div>
-        <div class="friction-row">
+        </li>
+        <li class="friction-row">
           <span class="step-badge high">Steps 7–8</span>
-          <div class="friction-desc"><strong>Missing routing diagram</strong> — The most critical structural decision (cross-diagonal vs. same-side cable routing) was never stated. Kevin inferred from tensegrity principles; Brian guessed.</div>
+          <p class="friction-desc"><strong>Missing routing diagram</strong> — The most critical structural decision (cross-diagonal vs. same-side cable routing) was never stated. Kevin inferred from tensegrity principles; Brian guessed.</p>
           <span class="friction-affected">Both</span>
-        </div>
-        <div class="friction-row">
+        </li>
+        <li class="friction-row">
           <span class="step-badge high">Step 8</span>
-          <div class="friction-desc"><strong>No adjustment method</strong> — "Lay flat → adjust → stand up → check" loop had no systematic guidance. Kevin did 3 iterations over 12 minutes. Brian nearly quit.</div>
+          <p class="friction-desc"><strong>No adjustment method</strong> — "Lay flat → adjust → stand up → check" loop had no systematic guidance. Kevin did 3 iterations over 12 minutes. Brian nearly quit.</p>
           <span class="friction-affected">Both</span>
-        </div>
-        <div class="friction-row">
-          <span class="step-badge medium">Steps 5 & 9</span>
-          <div class="friction-desc"><strong>Vague knot instruction</strong> — "Tie a secure knot" is not actionable for a craft novice. Kevin used a double half-hitch from prior knowledge; Brian had no equivalent fallback.</div>
+        </li>
+        <li class="friction-row">
+          <span class="step-badge medium">Steps 5 &amp; 9</span>
+          <p class="friction-desc"><strong>Vague knot instruction</strong> — "Tie a secure knot" is not actionable for a craft novice. Kevin used a double half-hitch from prior knowledge; Brian had no equivalent fallback.</p>
           <span class="friction-affected">Both</span>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
 
     <!-- KEY FINDINGS -->
     <section class="section reveal">
-      <div class="section-label">Analysis</div>
+      <p class="section-label">Analysis</p>
       <h2>Three Core Design Failures</h2>
 
-      <div class="finding-list">
-        <div class="finding-card">
-          <div class="finding-icon">🗺️</div>
+      <ul class="finding-list">
+        <li class="finding-card">
+          <span class="finding-icon" aria-hidden="true">🗺️</span>
           <div class="finding-body">
             <h3>Missing spatial diagram for cable routing</h3>
             <p>The most important structural decision in the entire build — which top corner connects to which bottom corner — was never explicitly shown. Photos of loose hanging thread give no routing information. An overhead schematic was entirely absent, and both testers had to guess or infer.</p>
           </div>
-        </div>
-        <div class="finding-card">
-          <div class="finding-icon">🤲</div>
+        </li>
+        <li class="finding-card">
+          <span class="finding-icon" aria-hidden="true">🤲</span>
           <div class="finding-body">
             <h3>Physical constraints were invisible to the designer</h3>
             <p>Several steps required three hands — a constraint obvious in testing but easy to miss when writing. The instruction assumed the builder had a free hand that was always occupied by the task. No staging tips, no prop suggestions.</p>
           </div>
-        </div>
-        <div class="finding-card">
-          <div class="finding-icon">📋</div>
+        </li>
+        <li class="finding-card">
+          <span class="finding-icon" aria-hidden="true">📋</span>
           <div class="finding-body">
             <h3>Vague action verbs didn't translate across skill levels</h3>
             <p>"Secure knot," "adjust until level," "space symmetrically" — these phrases carry different meanings depending on what knowledge the reader brings. Expert users fill the gap with prior experience. Novice users are left without recourse.</p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
 
     <hr />
 
     <!-- BEFORE / AFTER -->
     <section class="section reveal">
-      <div class="section-label">Iteration</div>
+      <p class="section-label">Iteration</p>
       <h2>What Changed in the Final Draft</h2>
       <p>Due to time constraints, the revision focused on what could be addressed within the existing document structure — no reshoot of photos, no new diagrams. The one concrete addition was a troubleshooting table that consolidates the most common failure states identified during testing.</p>
 
       <div class="ba-grid">
         <div class="ba-col">
-          <div class="ba-header before">Identified Problems</div>
-          <div class="ba-item">No diagram showing which top corner connects to which bottom corner</div>
-          <div class="ba-item">"Tie a secure knot" with no type specified</div>
-          <div class="ba-item">No guidance for stabilizing parts during hot glue steps</div>
-          <div class="ba-item">Bundle checklist present but visually buried in text</div>
-          <div class="ba-item">"Adjust until it looks equal" — subjective and open-ended</div>
-          <div class="ba-item">Step 6 assumed a free hand that didn't exist</div>
+          <h3 class="ba-header before">Identified Problems</h3>
+          <ul>
+            <li class="ba-item">No diagram showing which top corner connects to which bottom corner</li>
+            <li class="ba-item">"Tie a secure knot" with no type specified</li>
+            <li class="ba-item">No guidance for stabilizing parts during hot glue steps</li>
+            <li class="ba-item">Bundle checklist present but visually buried in text</li>
+            <li class="ba-item">"Adjust until it looks equal" — subjective and open-ended</li>
+            <li class="ba-item">Step 6 assumed a free hand that didn't exist</li>
+          </ul>
         </div>
         <div class="ba-col">
-          <div class="ba-header after">What Was Actually Fixed</div>
-          <div class="ba-item">Troubleshooting table added — covering the knot, cable routing, and adjustment loop failure states in one place</div>
+          <h3 class="ba-header after">What Was Actually Fixed</h3>
+          <ul>
+            <li class="ba-item">Troubleshooting table added — covering the knot, cable routing, and adjustment loop failure states in one place</li>
+          </ul>
         </div>
       </div>
 
-      <div class="callout" style="margin-top: 28px;">
+      <aside class="callout" style="margin-top: 28px;">
         <p>The remaining issues — routing diagram, photo reshoots, checklist redesign — were documented but not implemented within the project timeline. They represent the clearest next iteration if the document were to be published for real use.</p>
-      </div>
+      </aside>
     </section>
 
     <!-- REFLECTION -->
     <section class="section reveal">
-      <div class="section-label">Reflection</div>
+      <p class="section-label">Reflection</p>
       <h2>What I Learned</h2>
 
       <div class="reflection-card">
@@ -233,12 +234,12 @@
         <p>If I were to do this again, I'd include a full overhead routing diagram before Step 7, specify knot type with a small inline illustration, and prototype the physical steps myself with a timer to surface every "three hands" moment before the instructions reach a user.</p>
       </div>
 
-      <div class="tag-row" style="margin-top: 24px;">
-        <span class="tag">AI assisted with copy drafting</span>
-        <span class="tag">User testing conducted independently</span>
-        <span class="tag">All photos taken by me</span>
-        <span class="tag">Analysis & design decisions are my own</span>
-      </div>
+      <ul class="tag-row" style="margin-top: 24px;">
+        <li><span class="tag">AI assisted with copy drafting</span></li>
+        <li><span class="tag">User testing conducted independently</span></li>
+        <li><span class="tag">All photos taken by me</span></li>
+        <li><span class="tag">Analysis &amp; design decisions are my own</span></li>
+      </ul>
     </section>
 
   </div><!-- /container -->
@@ -246,7 +247,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <span>© 2026 Huiying Chung</span>
+  <small>© 2026 Huiying Chung</small>
   <a href="index.html#work">← Back to Portfolio</a>
 </footer>
 
