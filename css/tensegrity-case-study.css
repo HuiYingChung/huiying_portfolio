@@ -46,6 +46,10 @@
   --shadow-card:   0 2px 20px rgba(0,0,0,.4);
   --shadow-hover:  0 8px 40px rgba(107,63,160,.25);
 
+  /* accent — lightened for dark-bg contrast (≥4.5:1) */
+  --accent:        #9B6FD0;
+  --accent-light:  #B899E8;
+
   /* shared.css aliases */
   --nav-bg:        rgba(16,14,24,.85);
   --text:          var(--text-primary);

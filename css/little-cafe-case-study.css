@@ -24,11 +24,14 @@
   --border-strong:rgba(255,255,255,0.13);
   --text-primary:  #F0EEF8;
   --text-secondary:#9A96B0;
-  --text-muted:    #5C5874;
+  --text-muted:    #8A869E;
   --text:          var(--text-primary);
   --tag-bg:      rgba(107,63,160,0.15);
   --tag-text:    #B899E8;
   --nav-bg:      rgba(13, 13, 18, 0.85);
+  /* accent — lightened for dark-bg contrast */
+  --accent: #9B6FD0;
+  --accent-light: #B899E8;
 }
 
 [data-theme="light"] {

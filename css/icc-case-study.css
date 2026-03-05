@@ -23,7 +23,7 @@
   --bg2: #1C1A17;
   --ink: #F0EDE8;
   --ink2: #B8B3A8;
-  --ink3: #706860;
+  --ink3: #A09488;
   --border: #2A2720;
   --white: #1C1915;
   --placeholder-bg: #222018;
@@ -31,6 +31,8 @@
   /* aliases for shared components */
   --text: var(--ink);
   --text-muted: var(--ink2);
+  /* accent — lightened for dark-bg contrast */
+  --accent: #9B6FD0;
 }
 
 body {
