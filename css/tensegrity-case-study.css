@@ -38,9 +38,9 @@
   --bg-subtle:     #1E1A30;
   --border:        rgba(139,94,199,.18);
 
-  --text-primary:  #EDE9F8;
-  --text-secondary:#A89EC0;
-  --text-muted:    #6B6280;
+  --text-primary:  #EDEAF5;   /* near-white, minimal tint */
+  --text-secondary:#B8B3C8;   /* neutral gray, contrast ~9.5:1 */
+  --text-muted:    #9490A2;   /* lighter muted, contrast ~6.2:1 — passes WCAG AA */
 
   --shadow-card:   0 2px 20px rgba(0,0,0,.4);
   --shadow-hover:  0 8px 40px rgba(107,63,160,.25);

@@ -29,6 +29,17 @@ function applyLight() {
   label.textContent = 'Dark';
 }
 
+// Whole-card click
+document.querySelectorAll('.card').forEach(card => {
+  const link = card.querySelector('.card-link');
+  if (!link) return;
+  card.addEventListener('click', e => {
+    // Let normal clicks on <a> tags inside the card work naturally
+    if (e.target.closest('a')) return;
+    window.location.href = link.href;
+  });
+});
+
 // Back to Top
 const backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => {

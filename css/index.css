@@ -284,6 +284,8 @@ section { padding: var(--space-xl) 0; }
   border: 1px solid var(--border);
   border-radius: 0;
   overflow: hidden;
+  position: relative;
+  cursor: pointer;
   transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s;
 }
 .card:hover {
@@ -367,7 +369,7 @@ section { padding: var(--space-xl) 0; }
   padding-bottom: 1px;
   transition: border-color 0.2s, color 0.2s;
 }
-.card-link:hover { color: var(--accent); border-color: var(--accent); }
+.card:hover .card-link { color: var(--accent); border-color: var(--accent); }
 
 /* ════════════════════════════════════════════════════════════
    CONTACT
