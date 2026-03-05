@@ -205,6 +205,7 @@ p:last-child { margin-bottom: 0; }
   font-size: 13px; font-style: italic;
   color: var(--text-muted);
 }
+.user-quote p { color: inherit; font-size: inherit; font-style: inherit; margin-bottom: 0; }
 
 /* ─── FRICTION MAP ───────────────────────────────────────── */
 .friction-map { margin: 28px 0; list-style: none; padding: 0; }
@@ -227,7 +228,7 @@ p:last-child { margin-bottom: 0; }
 .step-badge.medium { background: rgba(255,153,0,.12);  color: #E07C00; }
 .step-badge.low    { background: rgba(107,63,160,.1);  color: var(--accent); }
 
-.friction-desc { font-size: 14px; color: var(--text-secondary); }
+.friction-desc { font-size: 14px; color: var(--text-secondary); margin-bottom: 0; }
 .friction-desc strong { color: var(--text-primary); font-weight: 600; }
 .friction-affected {
   font-size: 11px; font-weight: 600;
