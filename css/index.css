@@ -114,6 +114,14 @@ nav {
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--text); }
+.nav-resume {
+  color: var(--accent) !important;
+  border: 1px solid var(--accent);
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s !important;
+}
+.nav-resume:hover { background: var(--accent); color: var(--bg) !important; }
 
 .theme-toggle {
   display: flex;
