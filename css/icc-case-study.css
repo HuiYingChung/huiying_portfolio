@@ -249,7 +249,6 @@ p { color: var(--ink2); font-weight: 300; margin-bottom: 1rem; }
   border-radius: 12px; border: 1px solid var(--border);
   text-align: center;
 }
-.outcome-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
 .outcome-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 4px; }
 .outcome-label { font-size: 0.8rem; color: var(--ink3); font-weight: 500; }
 

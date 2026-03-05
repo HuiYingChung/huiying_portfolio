@@ -280,16 +280,7 @@ nav {
 .card:hover {
   border-color: var(--accent-border);
   background: var(--bg-hover);
-}
-.card-icon {
-  width: 36px; height: 36px;
-  background: var(--accent-dim);
-  border-radius: var(--radius-sm);
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 12px;
-  font-size: 18px;
-}
-.card h4 {
+}.card h4 {
   font-family: var(--font-display);
   font-size: 13px;
   font-weight: 600;

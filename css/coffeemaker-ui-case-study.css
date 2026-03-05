@@ -125,12 +125,7 @@ strong { color: var(--text); font-weight: 600; }
   border-radius: 12px; padding: 1.4rem;
   transition: box-shadow 0.2s, transform 0.2s;
 }
-.problem-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
-.problem-icon {
-  font-size: 1.4rem; margin-bottom: 0.75rem;
-  display: block;
-}
-.problem-card h3 { font-size: 0.95rem; margin-bottom: 0.4rem; }
+.problem-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }.problem-card h3 { font-size: 0.95rem; margin-bottom: 0.4rem; }
 .problem-card p { font-size: 0.88rem; margin: 0; }
 
 /* ── Quote Block ── */

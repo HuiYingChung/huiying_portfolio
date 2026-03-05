@@ -213,22 +213,18 @@
 
     <div class="decisions-grid">
       <article class="decision-card reveal">
-        <span class="decision-icon">🗺</span>
         <h3 class="decision-title">Flat, Accessible Navigation</h3>
         <p class="decision-text">Kept navigation as a single top bar with 5 direct links — no dropdowns or nested menus. This reduced cognitive load for users who arrive with a specific page in mind (e.g., finding a trail), and made responsive design simpler: the menu collapses cleanly on mobile.</p>
       </article>
       <article class="decision-card reveal">
-        <span class="decision-icon">📐</span>
         <h3 class="decision-title">CSS Custom Properties System</h3>
         <p class="decision-text">All colors and key spacing values were defined as CSS variables in <code style="font-family: 'DM Mono', monospace; font-size: 0.85em; background: rgba(107,63,160,0.12); color: var(--purple-xl); padding: 0.1em 0.4em; border-radius: 3px;">:root</code>, shared across pages via a single linked stylesheet. This ensured visual consistency without duplicating declarations, and made future updates a single-line change.</p>
       </article>
       <article class="decision-card reveal">
-        <span class="decision-icon">📱</span>
         <h3 class="decision-title">Mobile-First Responsive Layout</h3>
         <p class="decision-text">Base styles were written for mobile, then progressively enhanced for tablet and desktop using CSS Grid and Flexbox breakpoints. The gallery page in particular required careful grid adjustment — shifting from 1 column on small screens to a 5-column masonry-style layout on desktop.</p>
       </article>
       <article class="decision-card reveal">
-        <span class="decision-icon">🔍</span>
         <h3 class="decision-title">SEO Meta Tags Per Page</h3>
         <p class="decision-text">Rather than reusing the same generic description, each page received a unique <code style="font-family: 'DM Mono', monospace; font-size: 0.85em; background: rgba(107,63,160,0.12); color: var(--purple-xl); padding: 0.1em 0.4em; border-radius: 3px;">meta description</code> and relevant keywords tailored to that page's content. This was one of the more satisfying course discoveries — understanding how page metadata connects design intent to search visibility.</p>
       </article>
