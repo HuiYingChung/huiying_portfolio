@@ -25,6 +25,7 @@
   --text-primary:  #F0EEF8;
   --text-secondary:#9A96B0;
   --text-muted:    #5C5874;
+  --text:          var(--text-primary);
   --tag-bg:      rgba(107,63,160,0.15);
   --tag-text:    #B899E8;
   --nav-bg:      rgba(13, 13, 18, 0.85);
@@ -39,6 +40,7 @@
   --border-strong:rgba(0,0,0,0.13);
   --text-primary:  #18151F;
   --text-secondary:#524D6A;
+  --text:          var(--text-primary);
   --text-muted:    #9691AA;
   --tag-bg:      rgba(107,63,160,0.08);
   --tag-text:    #6B3FA0;

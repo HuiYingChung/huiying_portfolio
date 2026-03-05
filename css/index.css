@@ -123,27 +123,25 @@ nav {
 }
 .nav-resume:hover { background: var(--accent); color: var(--bg) !important; }
 
-.theme-toggle {
+.theme-btn {
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
   background: none;
   border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.35rem 0.85rem;
+  border-radius: 50%;
   cursor: pointer;
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  font-weight: 400;
   color: var(--text-muted);
-  letter-spacing: 0.04em;
-  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  transition: border-color 0.2s, color 0.2s;
 }
-.theme-toggle:hover {
-  border-color: var(--accent);
-  color: var(--text);
-}
-.theme-toggle .icon { font-size: 0.9rem; line-height: 1; }
+.theme-btn:hover { border-color: var(--accent); color: var(--text); }
+.theme-btn svg { width: 14px; height: 14px; fill: currentColor; }
+.theme-btn .icon-sun  { display: none; }
+.theme-btn .icon-moon { display: block; }
+[data-theme="dark"] .theme-btn .icon-sun  { display: block; }
+[data-theme="dark"] .theme-btn .icon-moon { display: none; }
 
 /* ════════════════════════════════════════════════════════════
    HERO
