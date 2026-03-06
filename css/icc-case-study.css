@@ -254,6 +254,20 @@ p { color: var(--ink2); font-weight: 300; margin-bottom: 1rem; }
 .outcome-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 4px; }
 .outcome-label { font-size: 0.8rem; color: var(--ink3); font-weight: 500; }
 
+/* ── TESTIMONIAL ── */
+.testimonial-block {
+  background: var(--accent-dim); border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0; padding: 1.4rem 1.6rem; margin: 1.5rem 0;
+}
+.testimonial-block p {
+  font-style: italic; color: var(--ink); font-size: 0.95rem; line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+.testimonial-source {
+  font-family: 'Syne', sans-serif; font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.06em; color: var(--accent); text-transform: uppercase;
+}
+
 /* ── REFLECTION ── */
 .reflection-box {
   background: var(--icc-navy); color: white;
