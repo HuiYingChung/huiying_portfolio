@@ -168,7 +168,7 @@ p { color: var(--ink2); font-weight: 300; margin-bottom: 1rem; }
 .figma-placeholder .figma-icon {
   width: 44px; height: 44px; opacity: 0.35;
 }
-.figma-embed { display: none; }
+.figma-embed { display: block; }
 
 .img-slot img, .img-slot iframe {
   width: 100%; border-radius: 12px;
