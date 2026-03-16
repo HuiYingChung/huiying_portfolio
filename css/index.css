@@ -287,7 +287,6 @@ section { padding: var(--space-xl) 0; }
 }
 .card {
   background: var(--bg-card);
-  border: 1px solid var(--border);
   border-radius: 0;
   overflow: hidden;
   position: relative;
