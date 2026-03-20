@@ -17,7 +17,11 @@ document.querySelectorAll('.card').forEach(card => {
   card.addEventListener('click', e => {
     // Let normal clicks on <a> tags inside the card work naturally
     if (e.target.closest('a')) return;
-    window.location.href = link.href;
+    if ('newTab' in card.dataset) {
+      window.open(link.href, '_blank', 'noopener noreferrer');
+    } else {
+      window.location.href = link.href;
+    }
   });
 });
 
