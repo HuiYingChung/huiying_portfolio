@@ -150,6 +150,7 @@
     <div class="section-body">
       <h2>Turning daily inputs into a next-meal engine.</h2>
       <p>I built the recommendation model around metadata-rich meal options and readable helper functions. Instead of pretending to be scientific, the system estimates rough signals like protein, vegetables, carbs, heaviness, convenience, sweet drinks, alcohol, and recent weekly patterns.</p>
+      <p>The scoring system then compares each meal option against those signals, along with preference tags, avoid tags, time of day, and variety rules. Meals that better support the user's current context move up, while repetitive or conflicting options move down. I kept this logic intentionally rule-based in the MVP so the recommendations would stay explainable, tunable, and easy to refine.</p>
 
       <ol class="phase-list">
         <li class="phase-item">
@@ -270,6 +271,7 @@
   <script src="js/next-bite-case-study.js" defer></script>
 </body>
 </html>
+
 
 
 
