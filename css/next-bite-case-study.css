@@ -23,6 +23,7 @@
 body {
   background: var(--bg);
   color: var(--text);
+  overflow-x: hidden;
 }
 
 .wrap {
@@ -379,3 +380,27 @@ footer {
     height: 48px;
   }
 }
+
+@media (max-width: 767px) {
+  .tldr-strip,
+  .stat-row,
+  .card-grid,
+  .decision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .wrap,
+  .layout,
+  .cta-section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-copy h1,
+  .section-body h2,
+  .cta-inner h2 {
+    overflow-wrap: anywhere;
+  }
+}
+
