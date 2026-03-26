@@ -1,0 +1,50 @@
+﻿<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="120" x2="1030" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F0E7"/>
+      <stop offset="1" stop-color="#E7EFE6"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(355 286) rotate(25.73) scale(287.724 232.774)">
+      <stop stop-color="#FF9F5A" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#FF9F5A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(844 302) rotate(152.241) scale(319.755 238.741)">
+      <stop stop-color="#9CCB8F" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#9CCB8F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="268" y1="196" x2="892" y2="636" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="#FFFDF9" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="wordmark" x1="386" y1="534" x2="791" y2="534" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8864C"/>
+      <stop offset="0.54" stop-color="#C79C58"/>
+      <stop offset="1" stop-color="#4D7F54"/>
+    </linearGradient>
+    <filter id="shadow" x="220" y="154" width="760" height="533" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.313726 0 0 0 0 0.262745 0 0 0 0 0.180392 0 0 0 0.12 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="40" fill="url(#bg)"/>
+  <ellipse cx="324" cy="296" rx="230" ry="164" fill="url(#glowA)"/>
+  <ellipse cx="848" cy="286" rx="252" ry="180" fill="url(#glowB)"/>
+  <g filter="url(#shadow)">
+    <rect x="260" y="176" width="680" height="453" rx="34" fill="url(#panel)"/>
+    <rect x="300" y="216" width="600" height="24" rx="12" fill="#F0E5D7"/>
+    <rect x="300" y="264" width="180" height="118" rx="24" fill="#FFF4E8"/>
+    <rect x="500" y="264" width="180" height="118" rx="24" fill="#F5F0E5"/>
+    <rect x="700" y="264" width="160" height="118" rx="24" fill="#EEF5EA"/>
+    <rect x="300" y="404" width="560" height="84" rx="22" fill="#FBF8F2"/>
+    <rect x="300" y="510" width="264" height="74" rx="22" fill="#FFF5EC"/>
+    <rect x="580" y="510" width="280" height="74" rx="22" fill="#F1F7EE"/>
+  </g>
+  <text x="600" y="548" text-anchor="middle" fill="url(#wordmark)" font-family="Syne, Arial, sans-serif" font-size="82" font-weight="700" letter-spacing="-1.2">NextBite</text>
+  <text x="600" y="605" text-anchor="middle" fill="#526073" font-family="Figtree, Arial, sans-serif" font-size="30" font-weight="500">Personal meal helper for balanced next-meal decisions</text>
+</svg>

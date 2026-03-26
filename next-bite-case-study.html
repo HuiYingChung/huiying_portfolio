@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextBite — Case Study · Huiying Chung</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/next-bite-case-study.css">
+  <script defer src="/_vercel/speed-insights/script.js"></script>
+
+  <meta name="description" content="Case study: NextBite, a bilingual next-meal helper designed for U.S.-based Chinese users. A React MVP focused on low-friction meal logging, practical recommendations, and 7-day food patterns.">
+  <meta name="author" content="Huiying Chung">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://huiyingchung.github.io/next-bite-case-study.html">
+  <meta property="og:title" content="NextBite — Case Study · Huiying Chung">
+  <meta property="og:description" content="Designing and building a bilingual meal helper that turns everyday eating habits into practical next-meal suggestions.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://huiyingchung.github.io/next-bite-case-study.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NextBite — Case Study · Huiying Chung">
+  <meta name="twitter:description" content="Designing and building a bilingual meal helper that turns everyday eating habits into practical next-meal suggestions.">
+</head>
+<body>
+  <nav aria-label="Site navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Huiying Chung</a>
+      <ul class="nav-links">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="HuiyingChung_Resume.pdf" target="_blank" class="nav-resume">Résumé <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-left:4px"><path d="M4 12L12 4"/><path d="M5 4h7v7"/></svg></a></li>
+      </ul>
+      <a href="index.html#work" class="nav-back">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>
+        All Work
+      </a>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <div class="hero-meta">
+        <span class="hero-tag">Case Study</span>
+        <span class="hero-year">Product Design · React MVP · 2026</span>
+      </div>
+      <h1>Next<em>Bite</em></h1>
+      <p class="hero-desc">A bilingual meal decision helper for U.S.-based Chinese users — designed to reduce decision fatigue with practical next-meal suggestions based on what they already ate, their weekly patterns, and how they feel today.</p>
+      <ul class="hero-chips">
+        <li class="chip">React</li>
+        <li class="chip">TypeScript</li>
+        <li class="chip">Tailwind CSS</li>
+        <li class="chip">Recommendation Design</li>
+        <li class="chip">Bilingual UX</li>
+        <li class="chip">Front-End MVP</li>
+      </ul>
+    </div>
+    <div class="hero-visual reveal">
+      <img src="images/next-bite.PNG" alt="NextBite interface preview showing meal logging and recommendation cards">
+    </div>
+  </header>
+
+  <hr class="page-divider">
+
+  <div class="reveal wrap top-block">
+    <dl class="tldr-strip">
+      <div class="tldr-item">
+        <dt class="tldr-label">Problem</dt>
+        <dd class="tldr-text">Meal advice tools often drift toward dieting, calorie obsession, or generic food lists — which did not fit the everyday realities of mixed Chinese-American eating habits.</dd>
+      </div>
+      <div class="tldr-item">
+        <dt class="tldr-label">Built</dt>
+        <dd class="tldr-text">A bilingual single-page React MVP that logs meals across 7 days, summarizes rough balance signals, and generates rule-based next-meal recommendations.</dd>
+      </div>
+      <div class="tldr-item">
+        <dt class="tldr-label">Result</dt>
+        <dd class="tldr-text">A working front-end product with local persistence, calm recommendation copy, responsive UI, and a recommendation engine tuned for real-life practicality.</dd>
+      </div>
+    </dl>
+  </div>
+
+  <div class="stat-row reveal wrap stat-wrap">
+    <div class="stat"><span class="stat-value">7</span><span class="stat-label">Days tracked</span></div>
+    <div class="stat"><span class="stat-value">80+</span><span class="stat-label">Meal options</span></div>
+    <div class="stat"><span class="stat-value">2</span><span class="stat-label">Languages</span></div>
+    <div class="stat"><span class="stat-value">3</span><span class="stat-label">Recommendation cards</span></div>
+  </div>
+
+  <hr class="s-divider">
+
+  <section class="layout reveal section-gap">
+    <p class="section-label">Context</p>
+    <div class="section-body">
+      <h2>Designing for mixed real-life eating habits.</h2>
+      <p>NextBite started from a very specific gap: many meal recommendation experiences feel either too generic or too judgmental. I wanted to design something that acknowledges how people actually eat — home-cooked Chinese meals one day, takeout bowls the next, soup, sandwiches, snacks, and grocery shortcuts in between.</p>
+      <p>The target audience was U.S.-based Chinese users who needed <strong>practical next-meal help</strong>, not calorie tracking. That product stance shaped the tone, the data model, and the interface from the beginning.</p>
+
+      <blockquote class="callout">
+        <p>The key design principle was simple: <strong>help people decide what to eat next without making them feel judged.</strong></p>
+      </blockquote>
+    </div>
+  </section>
+
+  <hr class="s-divider">
+
+  <section class="layout reveal section-gap">
+    <p class="section-label">Challenge</p>
+    <div class="section-body">
+      <h2>Making recommendations feel believable without using a backend.</h2>
+      <p>This project was intentionally scoped as a front-end MVP: no authentication, no database, no external APIs. That meant the product had to feel useful using only <strong>localStorage, rule-based logic, and well-structured metadata</strong>.</p>
+      <div class="card-grid">
+        <article class="card"><h4>Low-friction logging</h4><p>Users needed to log meals quickly with chips, dropdowns, and grouped options instead of typing everything manually.</p></article>
+        <article class="card"><h4>Explainable recommendations</h4><p>The recommendation engine had to feel grounded in actual user inputs while staying simple enough to tune and maintain.</p></article>
+        <article class="card"><h4>Everyday tone</h4><p>The copy had to stay supportive and practical — avoiding diet-culture language while still talking about balance.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="s-divider">
+
+  <section class="layout reveal section-gap">
+    <p class="section-label">System Design</p>
+    <div class="section-body">
+      <h2>Turning daily inputs into a next-meal engine.</h2>
+      <p>I built the recommendation model around metadata-rich meal options and readable helper functions. Instead of pretending to be scientific, the system estimates rough signals like protein, vegetables, carbs, heaviness, convenience, sweet drinks, alcohol, and recent weekly patterns.</p>
+
+      <ol class="phase-list">
+        <li class="phase-item">
+          <span class="phase-num">01</span>
+          <div class="phase-content">
+            <h4>Structured meal logging</h4>
+            <p>Each meal captures protein, vegetables, carbs, fruit, soup, drink, cooking method, source, and portion. I also expanded the food lists to better match North American grocery and takeout realities.</p>
+          </div>
+        </li>
+        <li class="phase-item">
+          <span class="phase-num">02</span>
+          <div class="phase-content">
+            <h4>Today + 7-day summary signals</h4>
+            <p>The app derives rough daily and weekly patterns from saved logs so the recommendation cards react to what happened today without ignoring the user’s recent habits.</p>
+          </div>
+        </li>
+        <li class="phase-item">
+          <span class="phase-num">03</span>
+          <div class="phase-content">
+            <h4>Rule-based scoring</h4>
+            <p>Meals are scored against preference tags, avoid tags, eating style, time of day, how the user feels today, and variety rules so the top three cards feel distinct rather than repetitive.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <hr class="s-divider">
+
+  <section class="layout reveal section-gap">
+    <p class="section-label">Key Decisions</p>
+    <div class="section-body">
+      <h2>Design choices that made the product feel lighter.</h2>
+      <div class="decision-grid">
+        <article class="decision-card">
+          <h4>Bilingual, but not over-translated</h4>
+          <p>I added English / Chinese switching for UI and recommendation copy, while intentionally keeping many meal names in English. For this audience, that felt more natural than fully translating every food label.</p>
+        </article>
+        <article class="decision-card">
+          <h4>Today is the main flow</h4>
+          <p>I restructured the page so Today’s Meals and recommendations come first. Past days still matter, but mainly as supporting context for the weekly snapshot and recommendation engine.</p>
+        </article>
+        <article class="decision-card">
+          <h4>Daily state over demographic assumptions</h4>
+          <p>I replaced a generic sex field with “How you feel today,” which made the app more respectful and more useful. Warm meals, low-energy days, and lighter options became explicit, user-controlled inputs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="s-divider">
+
+  <section class="layout reveal section-gap">
+    <p class="section-label">Product Detail</p>
+    <div class="section-body">
+      <h2>What the MVP includes.</h2>
+      <ul class="bullet-list">
+        <li>7-day logging with real dates and local persistence</li>
+        <li>Three role-based recommendation cards: Best Match, Best Balance, Most Convenient</li>
+        <li>Today signals and weekly snapshot summaries driven by actual saved logs</li>
+        <li>Responsive layout for desktop and mobile, including a mobile date dropdown</li>
+        <li>SEO basics, favicon, and deployment to Vercel</li>
+      </ul>
+      <p>One part I cared about a lot was keeping the recommendations <strong>readable and human</strong>. The scoring is modular, but the output had to sound like a calm helper rather than a calculator.</p>
+    </div>
+  </section>
+
+  <hr class="s-divider">
+
+  <section class="layout reveal section-gap">
+    <p class="section-label">AI Collaboration</p>
+    <div class="section-body">
+      <details class="deep-dive">
+        <summary>How I used AI in the process ↓</summary>
+        <div class="deep-dive-body">
+          <p>I built NextBite in close collaboration with AI, but the product direction and design decisions were still mine. AI was most useful as a coding and iteration partner once the product frame was already clear.</p>
+          <ul class="bullet-list">
+            <li><strong>Product framing</strong> — refining the scope, user principles, and MVP trade-offs</li>
+            <li><strong>Recommendation engine implementation</strong> — structuring rule-based scoring and helper functions cleanly</li>
+            <li><strong>Iteration speed</strong> — rapidly testing UI changes, copy changes, and interaction refinements</li>
+            <li><strong>Audit and QA</strong> — checking coverage, finding inconsistencies, and tightening recommendation logic</li>
+          </ul>
+          <p>The collaboration mattered most when the project moved from “a page with inputs” into “a believable product experience.”</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <hr class="s-divider">
+
+  <section class="layout reveal section-gap">
+    <p class="section-label">Reflection</p>
+    <div class="section-body">
+      <h2>What this project demonstrates.</h2>
+      <p>NextBite shows how I think about products end to end: not just visuals, but information structure, interaction clarity, rules-based UX logic, and user trust. The most important work was not simply “making the UI pretty” — it was deciding what the product should pay attention to, and what it should deliberately avoid.</p>
+      <p>If I continued this project, the next meaningful step would be moving from local-only history to cloud sync and accounts. But for an MVP, I think the most important thing was already achieved: the app feels lightweight, understandable, and genuinely useful.</p>
+    </div>
+  </section>
+
+  <section class="cta-section reveal">
+    <div class="cta-inner">
+      <h2>See NextBite live.</h2>
+      <p>The MVP is deployed and ready to explore.</p>
+      <div class="cta-links">
+        <a class="btn btn-primary" href="https://next-bite-eight.vercel.app/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3H3a1 1 0 00-1 1v9a1 1 0 001 1h9a1 1 0 001-1v-3M9 2h5m0 0v5m0-5L8 9"/></svg>
+          Live Site
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Huiying Chung</span>
+    <a href="index.html#work"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:4px"><path d="M13 8H3"/><path d="M7 4L3 8l4 4"/></svg>Back to Portfolio</a>
+  </footer>
+
+  <script src="js/next-bite-case-study.js" defer></script>
+</body>
+</html>
+
