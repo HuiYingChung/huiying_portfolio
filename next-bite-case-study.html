@@ -244,6 +244,36 @@
   <hr class="s-divider">
 
   <section class="layout reveal section-gap">
+    <p class="section-label">Logic Tension</p>
+    <div class="section-body">
+      <h2>The hardest part was keeping the system believable.</h2>
+      <p>As the product grew, the real challenge was no longer generating more options. It was making the recommendation system stay coherent as more rules, preferences, and edge cases were added. A recommendation engine can be technically functional and still feel wrong if the logic starts colliding with itself.</p>
+      <p>I had to keep checking for situations where multiple valid rules pulled in different directions at once: someone might want a warm drink but also avoid caffeine, prefer both tea and juice, need more protein overall but already have repeated the same protein twice, or trigger dinner timing, <em>feel-today</em> inputs, and avoid tags at the same time. Those overlaps were where the product either became trustworthy or started to feel arbitrary.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h4>Reachability</h4>
+          <p>A larger dataset only mattered if the meals could actually surface. I treated reachability as a product quality problem, not just a code problem, because a meal that never appears is effectively not part of the experience.</p>
+        </article>
+        <article class="card">
+          <h4>Reasonableness</h4>
+          <p>Scoring had to match common sense. If a user avoided caffeine, recommending tea weakened trust immediately. The same was true when tofu kept reappearing after multiple tofu meals, or when sparse logs still produced overly confident weekly summaries.</p>
+        </article>
+        <article class="card">
+          <h4>Readability and trust</h4>
+          <p>The more logic I added, the easier it was for the system to become a black box. I kept pushing the MVP toward explainable, evidence-based behavior so users could feel that the product was reacting to their inputs for understandable reasons.</p>
+        </article>
+      </div>
+
+      <blockquote class="callout">
+        <p>The hardest part was not making the app produce recommendations. It was making those recommendations feel reachable, readable, and believable at the same time.</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <hr class="s-divider">
+
+  <section class="layout reveal section-gap">
     <p class="section-label">Reflection</p>
     <div class="section-body">
       <h2>What this project demonstrates.</h2>
