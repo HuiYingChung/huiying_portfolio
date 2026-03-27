@@ -221,8 +221,9 @@ body {
 .card-grid,
 .decision-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+  align-items: start;
 }
 
 .card,
@@ -351,9 +352,7 @@ footer {
   .layout {
     grid-template-columns: 1fr;
   }
-  .stat-row,
-  .card-grid,
-  .decision-grid {
+  .stat-row {
     grid-template-columns: repeat(2, 1fr);
   }
 }
