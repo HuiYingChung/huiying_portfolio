@@ -202,6 +202,11 @@ body {
   margin-top: 1rem;
 }
 
+.section-body .card-grid + .callout,
+.section-body .decision-grid + .callout {
+  margin-top: 1.5rem;
+}
+
 .section-body p,
 .tldr-text,
 .bullet-list li,
